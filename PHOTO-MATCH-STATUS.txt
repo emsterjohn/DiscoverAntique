@@ -3,14 +3,14 @@ NOTE FOR THE CURRENT LOCAL ZIP
 The URLs and photo-match notes below are retained as historical research/attribution references only. The website does not load these remote photos. No photo files are bundled in this ZIP. Add one image.jpg to each matching tourist-spot folder under tourist-spot-images. No manifest editing is required; see IMAGE-GUIDE.txt.
 
 DISCOVER ANTIQUE — PHOTO MATCH STATUS
-Attraction-specific photos: 36 / 56
+Attraction-specific photos: 35 / 52
 
 HOW "MATCHED" WAS DETERMINED
 - Each photo below comes from a page whose own caption/alt text/title names that exact attraction.
 - The photos were NOT visually re-inspected during this update (no image download/preview was available). Please open each detail page once and confirm by eye.
 - No municipality cover and no stock photo is ever used as an attraction background. If a photo is missing or fails to load, the page shows a clean gradient plus a notice.
 
-A. ATTRACTIONS WITH A SOURCE-MATCHED PHOTO (36)
+A. ATTRACTIONS WITH A SOURCE-MATCHED PHOTO (35)
 - Anini-y: Sira-an Hot Spring
     photo: https://wengwengwanders.wordpress.com/wp-content/uploads/2016/08/img_1176.jpg?crop=1&h=1500&w=2000
     rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
@@ -67,10 +67,6 @@ A. ATTRACTIONS WITH A SOURCE-MATCHED PHOTO (36)
     photo: https://cmpg.upv.edu.ph/wp-content/uploads/2026/02/heritage-7436-1CN3WGgADEdlKSFQQ5THOGTVqBJOHPfCo-1024x768.jpg
     rights: OFFICIAL/INSTITUTIONAL (confirm reuse permission with the LGU/UPV)
     source page: https://cmpg.upv.edu.ph/heritage/bukid-linintian/
-- Laua-an: Traditional Boat-Making in Lindero
-    photo: https://cmpg.upv.edu.ph/wp-content/uploads/2026/02/heritage-7587-1O5Rfosz-iKEos1cMvFzShcnFTpYNWfsE.png
-    rights: OFFICIAL/INSTITUTIONAL (confirm reuse permission with the LGU/UPV)
-    source page: https://cmpg.upv.edu.ph/heritage/pag-obra-kang-baruto/
 - Libertad: Bongan-bongan Spring
     photo: https://farm5.staticflickr.com/4563/38362375456_42384705fc_c.jpg
     rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
@@ -156,13 +152,11 @@ A. ATTRACTIONS WITH A SOURCE-MATCHED PHOTO (36)
     rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
     source page: https://www.tanawexplorer.com/valderrama-trilogy-mt-igcoron/
 
-B. ATTRACTIONS STILL NEEDING A VERIFIED PHOTO (20) — gradient fallback is shown
+B. ATTRACTIONS STILL NEEDING A VERIFIED PHOTO (17) — gradient fallback is shown
 - Barbaza: Mt. Nangtud
 - Belison: Mt. Guinobatan and Cave
 - Belison: Centennial Acacia Trees
 - Belison: Sinaja Bridge
-- Belison: Pagunsan Ancestral House
-- Laua-an: Jose Rizal Monument, Guisijan
 - Pandan: Baybay Beach
 - San Jose de Buenavista: Old San Pedro Church Ruins
 - San Jose de Buenavista: St. Joseph the Worker Cathedral
@@ -172,7 +166,6 @@ B. ATTRACTIONS STILL NEEDING A VERIFIED PHOTO (20) — gradient fallback is show
 - San Remigio: Bato Cueva
 - San Remigio: Montevalle
 - Sebaste: Feast of St. Blaise and Parish Devotion
-- Sebaste: Stampa of Nuestra Señora del Carmen
 - Sibalom: Sta. Rita de Cascia Parish Church Bells
 - Tibiao: Tibiao River Adventure
 - Tobias Fornier: San Nicolas de Tolentino Parish Convent and Records
