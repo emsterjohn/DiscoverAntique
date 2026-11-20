@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const el = id => document.getElementById(id);
   const data = window.DISCOVER_DESTINATIONS || [];
   const detailMenuToggle = el("detailMenuToggle");
   const detailMainNav = el("detailMainNav");
@@ -25,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let attractionIndex = 0;
   let activeLightboxKeyHandler = null;
 
-  const el = id => document.getElementById(id);
   const title = el("detailTitle");
   const heroHost = el("detailHeroBackdrop");
   const heroSection = heroHost ? heroHost.closest(".detail-hero") : null;
