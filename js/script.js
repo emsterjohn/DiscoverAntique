@@ -332,25 +332,18 @@ document.addEventListener("DOMContentLoaded", () => {
     if (event.key === "ArrowLeft") { event.preventDefault(); moveCarousel(-1); }
   });
 
-  // Pointer-based dragging supports touch, pen, and mouse input.
+  // Desktop mouse dragging only. Android and other touch devices use the
+  // browser's native horizontal scrolling, momentum, and CSS scroll snapping.
   let pointerId = null;
-  let lastPointerX = 0;
-  let lastPointerTime = 0;
-  let dragVelocity = 0;
-  let momentumFrame = 0;
 
   track.addEventListener("pointerdown", (event) => {
-    if (event.pointerType === "mouse" && event.button !== 0) return;
+    if (event.pointerType !== "mouse" || event.button !== 0) return;
     if (event.target.closest(".municipality-play")) return;
     pointerId = event.pointerId;
     isDragging = true;
     didDrag = false;
     dragStartX = event.clientX;
     dragStartScroll = track.scrollLeft;
-    lastPointerX = event.clientX;
-    lastPointerTime = performance.now();
-    dragVelocity = 0;
-    cancelAnimationFrame(momentumFrame);
     track.classList.add("is-dragging");
     track.style.scrollBehavior = "auto";
     try { track.setPointerCapture(pointerId); } catch (_) {}
@@ -361,11 +354,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const distance = event.clientX - dragStartX;
     if (Math.abs(distance) > 5) didDrag = true;
     track.scrollLeft = dragStartScroll - distance;
-    const now = performance.now();
-    const elapsed = Math.max(1, now - lastPointerTime);
-    dragVelocity = (lastPointerX - event.clientX) / elapsed;
-    lastPointerX = event.clientX;
-    lastPointerTime = now;
   });
 
   function stopDragging(event) {
@@ -381,22 +369,7 @@ document.addEventListener("DOMContentLoaded", () => {
       } catch (_) {}
     }
 
-    // A short, damped glide makes a quick swipe feel natural on mobile.
-    if (didDrag && Math.abs(dragVelocity) > 0.08) {
-      let velocity = Math.max(-1.5, Math.min(1.5, dragVelocity));
-      let previousTime = performance.now();
-      const glide = (now) => {
-        const delta = Math.min(32, now - previousTime);
-        previousTime = now;
-        track.scrollLeft += velocity * delta;
-        velocity *= Math.pow(0.92, delta / 16);
-        if (Math.abs(velocity) > 0.025) momentumFrame = requestAnimationFrame(glide);
-      };
-      momentumFrame = requestAnimationFrame(glide);
-    }
-
     if (didDrag) {
-      // Suppress only the synthetic click immediately following this drag.
       const suppressDraggedClick = (clickEvent) => {
         clickEvent.preventDefault();
         clickEvent.stopPropagation();
