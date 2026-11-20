@@ -27,28 +27,54 @@ document.addEventListener("DOMContentLoaded", () => {
     `tourist-spot-images/${encodeURIComponent(municipality)}/${encodeURIComponent(attraction)}/image.${municipality === "Culasi" && ["Bantang River", "Batbatan Island"].includes(attraction) ? "avif" : "jpg"}`;
   const imagesForMunicipality = place => (place.attractions || []).map(name => imagePathFor(place.name, name));
 
-  // Prepare one photo for every municipality before visitors begin swiping.
+  // Share image requests and cap concurrent loads to protect lower-memory phones.
   const preloadedImages = new Map();
+  const imageLoadQueue = [];
+  const maxConcurrentImageLoads = 3;
+  let activeImageLoads = 0;
+
+  function processImageQueue() {
+    while (activeImageLoads < maxConcurrentImageLoads && imageLoadQueue.length) {
+      const task = imageLoadQueue.shift();
+      activeImageLoads += 1;
+      const image = new Image();
+      image.decoding = "async";
+
+      const finish = loaded => {
+        task.resolve(loaded);
+        activeImageLoads -= 1;
+        processImageQueue();
+      };
+
+      image.onload = async () => {
+        if (typeof image.decode === "function") {
+          try { await image.decode(); } catch (_) {}
+        }
+        finish(true);
+      };
+      image.onerror = () => finish(false);
+      image.src = task.path;
+    }
+  }
+
   function preloadImage(path) {
     if (preloadedImages.has(path)) return preloadedImages.get(path);
     const promise = new Promise(resolve => {
-      const image = new Image();
-      image.onload = async () => {
-        if (image.decode) { try { await image.decode(); } catch (_) {} }
-        resolve(true);
-      };
-      image.onerror = () => resolve(false);
-      image.src = path;
+      imageLoadQueue.push({ path, resolve });
+      processImageQueue();
     });
     preloadedImages.set(path, promise);
     return promise;
   }
-  municipalities.forEach((place, index) => {
+
+  // Start with only the first few carousel photos. Other photos load on demand
+  // as their cards or featured sections approach the viewport.
+  municipalities.slice(0, 3).forEach((place, index) => {
     const firstPath = imagesForMunicipality(place)[0];
     if (!firstPath) return;
     preloadImage(firstPath).then(loaded => {
       if (!loaded) return;
-      const card = track.querySelector(`.municipality-card[data-index="${index}"]`);
+      const card = track.children[index];
       const firstLayer = card && card.querySelector(".card-image-layer");
       if (firstLayer && !card.dataset.currentImage) {
         firstLayer.style.backgroundImage = `url("${firstPath.replace(/"/g, "%22")}")`;
@@ -57,29 +83,11 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
-  // Warm the remaining attraction photos when the browser is idle, in small batches.
-  const remainingPhotoPaths = [...new Set(municipalities.flatMap(place => imagesForMunicipality(place)).filter((path, i, all) => path !== imagesForMunicipality(municipalities[0])[0]))];
-  const warmRemainingPhotos = () => {
-    let cursor = 0;
-    const loadBatch = () => {
-      const batch = remainingPhotoPaths.slice(cursor, cursor + 4);
-      cursor += batch.length;
-      batch.forEach(preloadImage);
-      if (cursor < remainingPhotoPaths.length) {
-        if ("requestIdleCallback" in window) window.requestIdleCallback(loadBatch, { timeout: 1800 });
-        else window.setTimeout(loadBatch, 500);
-      }
-    };
-    loadBatch();
-  };
-  if ("requestIdleCallback" in window) window.requestIdleCallback(warmRemainingPhotos, { timeout: 1200 });
-  else window.setTimeout(warmRemainingPhotos, 700);
-  const findAvailableImages = paths => Promise.all(paths.map(path => new Promise(resolve => {
-    const image = new Image();
-    image.onload = () => resolve(path);
-    image.onerror = () => resolve(null);
-    image.src = path;
-  }))).then(results => results.filter(Boolean));
+
+  // Reuse the same cached request for cards, the hero, and featured slideshows.
+  const findAvailableImages = paths => Promise.all(
+    paths.map(path => preloadImage(path).then(loaded => loaded ? path : null))
+  ).then(results => results.filter(Boolean));
 
   const attractionEntries = municipalities.flatMap(place => (place.attractions || []).map(name => ({
     municipality: place.name,
@@ -236,7 +244,9 @@ document.addEventListener("DOMContentLoaded", () => {
   let isDragging = false;
   let visualFrame = 0;
 
-  const getCards = () => Array.from(track.querySelectorAll(".municipality-card"));
+  // The card list is stable after initial rendering; reuse it during scroll frames.
+  const municipalityCards = Array.from(track.children);
+  const getCards = () => municipalityCards;
 
   function selectMunicipality(index, clickedCard) {
     selectedIndex = index;
@@ -400,6 +410,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!horizontalDrag) {
       if (Math.abs(dy) > Math.abs(dx) || Math.abs(dx) < 8) return;
       horizontalDrag = true;
+      isDragging = true;
       track.classList.add("is-dragging");
       track.setPointerCapture(event.pointerId);
     }
@@ -411,6 +422,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!pointerActive) return;
     pointerActive = false;
     if (!horizontalDrag) return;
+    isDragging = false;
     const dx = event.clientX - pointerStartX;
     const moved = Math.abs(dx);
     const direction = dx < 0 ? 1 : -1;
