@@ -365,3 +365,79 @@ body.lightbox-open { overflow:hidden; }
   .detail-header > .header-cta { padding-inline: 7px; font-size: 8px; }
   .detail-header .detail-nav a { font-size: 9px; }
 }
+
+
+/* Mobile tourist-page header follows the main page: brand, then hamburger.
+   The menu opens the same four main-page destinations. */
+.detail-header { position: fixed !important; }
+.detail-header .detail-menu-toggle { display: none; }
+@media (max-width: 760px) {
+  .detail-header {
+    display: flex;
+    min-height: 56px;
+    height: 56px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 4%;
+  }
+  .detail-header .brand { flex: 1 1 auto; min-width: 0; }
+  .detail-header .brand-name { white-space: nowrap; }
+  .detail-header .detail-menu-toggle {
+    display: inline-flex;
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    border: 1px solid rgba(255,255,255,.35);
+    border-radius: 7px;
+    background: rgba(255,255,255,.08);
+    color: #fff;
+    font-size: 23px;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .detail-header > .header-cta { display: none; }
+  .detail-header .detail-nav {
+    position: absolute;
+    top: calc(100% + 7px);
+    right: 4%;
+    left: auto;
+    display: none !important;
+    width: min(260px, 92vw);
+    margin: 0;
+    padding: 9px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: 10px;
+    background: rgba(18,59,80,.98);
+    box-shadow: 0 16px 34px rgba(5,25,34,.28);
+  }
+  .detail-header .detail-nav.open { display: flex !important; }
+  .detail-header .detail-nav a {
+    width: 100%;
+    min-height: 44px;
+    justify-content: flex-start;
+    padding: 10px 13px;
+    border-radius: 6px;
+    font-size: 13px;
+  }
+  .detail-header .detail-nav a:hover,
+  .detail-header .detail-nav a:focus-visible { background: rgba(255,255,255,.1); }
+  .detail-page { padding-top: 74px; }
+}
+@media (max-width: 360px) {
+  .detail-header .brand-name { font-size: 7px; letter-spacing: .08em; }
+}
+
+/* A touch swipe is handled as a single-card gesture by JavaScript. */
+.municipality-track {
+  touch-action: pan-y;
+  scroll-snap-type: none;
+  -webkit-overflow-scrolling: auto;
+}
+.municipality-track.is-dragging { scroll-snap-type: none !important; }
