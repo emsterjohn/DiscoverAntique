@@ -99,8 +99,7 @@ window.DISCOVER_DESTINATIONS = [
     "attractions": [
       "Mt. Guinobatan and Cave",
       "Centennial Acacia Trees",
-      "Sinaja Bridge",
-      "Pagunsan Ancestral House"
+      "Sinaja Bridge"
     ],
     "details": {
       "Mt. Guinobatan and Cave": {
@@ -143,20 +142,6 @@ window.DISCOVER_DESTINATIONS = [
         ],
         "sourceUrl": "https://belisonantique.gov.ph/cultural-heritage/",
         "sourceLabel": "Municipality of Belison – Cultural Heritage",
-        "note": "This page is an introductory guide. Confirm current access, local registration or guide requirements, fees, operating hours, weather conditions, and visitor rules with the municipal tourism office before travelling."
-      },
-      "Pagunsan Ancestral House": {
-        "name": "Pagunsan Ancestral House",
-        "category": "Heritage House",
-        "location": "Barangay Bajalan-Lancara, Belison, Antique",
-        "description": "The Pagunsan Ancestral House is a two-storey family home built in 1951, using local hardwoods and cement. It is documented as a heritage house, although its condition and access should be checked before visiting.",
-        "highlights": [
-          "Mid-century ancestral architecture",
-          "Local family history",
-          "Documented cultural asset"
-        ],
-        "sourceUrl": "https://cmpg.upv.edu.ph/heritage/pagunsan-ancestral-house/",
-        "sourceLabel": "Cultural Mapping of Panay and Guimaras",
         "note": "This page is an introductory guide. Confirm current access, local registration or guide requirements, fees, operating hours, weather conditions, and visitor rules with the municipal tourism office before travelling."
       }
     }
@@ -335,11 +320,9 @@ window.DISCOVER_DESTINATIONS = [
   {
     "name": "Laua-an",
     "region": "Central Antique",
-    "description": "Laua-an brings together upland landscapes, coastal livelihoods, and local traditions. Its documented heritage includes a mountain landscape, a historic Rizal monument, and traditional boat-making in Barangay Lindero.",
+    "description": "Laua-an brings together upland landscapes, coastal livelihoods, and local traditions. Bukid Linintian reflects the municipality’s natural landscape and community heritage.",
     "attractions": [
-      "Bukid Linintian",
-      "Jose Rizal Monument, Guisijan",
-      "Traditional Boat-Making in Lindero"
+      "Bukid Linintian"
     ],
     "details": {
       "Bukid Linintian": {
@@ -351,34 +334,6 @@ window.DISCOVER_DESTINATIONS = [
           "Forested mountain landscape",
           "Watershed and biodiversity value",
           "Community connection to the land"
-        ],
-        "sourceUrl": "https://cmpg.upv.edu.ph/heritage-location/antique/laua-an/",
-        "sourceLabel": "Cultural Mapping of Panay and Guimaras",
-        "note": "This page is an introductory guide. Confirm current access, local registration or guide requirements, fees, operating hours, weather conditions, and visitor rules with the municipal tourism office before travelling."
-      },
-      "Jose Rizal Monument, Guisijan": {
-        "name": "Jose Rizal Monument, Guisijan",
-        "category": "Monument & Heritage Site",
-        "location": "Barangay Guisijan, Laua-an, Antique",
-        "description": "The Jose Rizal Monument in Guisijan is a public statue built in 1948 in the old municipal plaza. It is a local heritage marker connected to the history of the former town center.",
-        "highlights": [
-          "1948 public monument",
-          "Historic old plaza",
-          "Local civic heritage"
-        ],
-        "sourceUrl": "https://cmpg.upv.edu.ph/heritage/jose-rizal-monument/",
-        "sourceLabel": "Cultural Mapping of Panay and Guimaras",
-        "note": "This page is an introductory guide. Confirm current access, local registration or guide requirements, fees, operating hours, weather conditions, and visitor rules with the municipal tourism office before travelling."
-      },
-      "Traditional Boat-Making in Lindero": {
-        "name": "Traditional Boat-Making in Lindero",
-        "category": "Traditional Craft & Cultural Experience",
-        "location": "Barangay Lindero, Laua-an, Antique",
-        "description": "Pag-obra kang Baruto is a traditional wooden boat-making practice in Barangay Lindero, where fishing is an important livelihood. The process includes building the hull and preparing the boat for use at sea.",
-        "highlights": [
-          "Traditional wooden boat construction",
-          "Coastal livelihood and knowledge",
-          "Community craft heritage"
         ],
         "sourceUrl": "https://cmpg.upv.edu.ph/heritage-location/antique/laua-an/",
         "sourceLabel": "Cultural Mapping of Panay and Guimaras",
@@ -737,7 +692,6 @@ window.DISCOVER_DESTINATIONS = [
     "description": "Sebaste is known for its devotion to Saint Blaise, whose annual feast draws pilgrims and devotees. The town’s religious traditions form an important part of its cultural identity.",
     "attractions": [
       "Feast of St. Blaise and Parish Devotion",
-      "Stampa of Nuestra Señora del Carmen",
       "Igpasungaw Falls"
     ],
     "details": {
@@ -750,20 +704,6 @@ window.DISCOVER_DESTINATIONS = [
           "Annual early-February religious celebration",
           "Traditional palapak blessing",
           "Pilgrimage and community devotion"
-        ],
-        "sourceUrl": "https://cmpg.upv.edu.ph/heritage-location/antique/sebaste/",
-        "sourceLabel": "Cultural Mapping of Panay and Guimaras",
-        "note": "This page is an introductory guide. Confirm current access, local registration or guide requirements, fees, operating hours, weather conditions, and visitor rules with the municipal tourism office before travelling."
-      },
-      "Stampa of Nuestra Señora del Carmen": {
-        "name": "Stampa of Nuestra Señora del Carmen",
-        "category": "Religious & Cultural Heritage",
-        "location": "Poblacion, Sebaste, Antique",
-        "description": "The Stampa of Nuestra Señora del Carmen is a framed devotional portrait used during novenas when the statue is unavailable. The image is part of Sebaste’s living religious traditions. Viewing arrangements should be confirmed with the parish.",
-        "highlights": [
-          "Devotional religious image",
-          "Local novena tradition",
-          "Community faith heritage"
         ],
         "sourceUrl": "https://cmpg.upv.edu.ph/heritage-location/antique/sebaste/",
         "sourceLabel": "Cultural Mapping of Panay and Guimaras",
