@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
     modal.setAttribute("aria-label", `${attractionName} photo viewer`);
     const modalImage = document.createElement("img");
     modalImage.alt = attractionName;
-    modalImage.src = path;
+    modalImage.decoding = "async";
     const close = document.createElement("button");
     close.type = "button"; close.className = "lightbox-close"; close.textContent = "×"; close.setAttribute("aria-label", "Close photo viewer");
     const image = document.createElement("img");
@@ -84,7 +84,13 @@ document.addEventListener("DOMContentLoaded", () => {
     button.type = "button"; button.className = "local-gallery-item";
     button.setAttribute("aria-label", `Open photo of ${attractionName}`);
     button.appendChild(image);
-    button.addEventListener("click", () => { modal.hidden = false; document.body.classList.add("lightbox-open"); close.focus(); });
+    button.addEventListener("click", () => {
+      // Load the full-size lightbox image only when a visitor opens the viewer.
+      if (!modalImage.hasAttribute("src")) modalImage.src = path;
+      modal.hidden = false;
+      document.body.classList.add("lightbox-open");
+      close.focus();
+    });
     const closeModal = () => { modal.hidden = true; document.body.classList.remove("lightbox-open"); };
     close.addEventListener("click", closeModal);
     modal.addEventListener("click", event => { if (event.target === modal) closeModal(); });
