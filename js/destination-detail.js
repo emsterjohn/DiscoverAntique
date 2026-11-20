@@ -1,26 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const el = id => document.getElementById(id);
   const data = window.DISCOVER_DESTINATIONS || [];
-  const detailMenuToggle = el("detailMenuToggle");
-  const detailMainNav = el("detailMainNav");
-  if (detailMenuToggle && detailMainNav) {
-    const closeDetailMenu = () => {
-      detailMainNav.classList.remove("open");
-      detailMenuToggle.setAttribute("aria-expanded", "false");
-      detailMenuToggle.setAttribute("aria-label", "Open navigation");
-      detailMenuToggle.textContent = "☰";
-    };
-    detailMenuToggle.addEventListener("click", () => {
-      const isOpen = detailMainNav.classList.toggle("open");
-      detailMenuToggle.setAttribute("aria-expanded", String(isOpen));
-      detailMenuToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
-      detailMenuToggle.textContent = isOpen ? "×" : "☰";
-    });
-    detailMainNav.querySelectorAll("a").forEach(link => link.addEventListener("click", closeDetailMenu));
-    document.addEventListener("keydown", event => { if (event.key === "Escape") closeDetailMenu(); });
-    window.addEventListener("resize", () => { if (window.innerWidth > 760) closeDetailMenu(); });
-  }
-
   const params = new URLSearchParams(location.search);
   let municipality = data.find(item => item.name === params.get("municipality")) || data[0];
   let attractionIndex = 0;
@@ -69,7 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function attractionImagePath(municipalityName, attractionName) {
-    return `tourist-spot-images/${encodeURIComponent(municipalityName)}/${encodeURIComponent(attractionName)}/image.jpg`;
+    const extension = municipalityName === "Culasi" && ["Bantang River", "Batbatan Island"].includes(attractionName) ? "avif" : "jpg";
+    return `tourist-spot-images/${encodeURIComponent(municipalityName)}/${encodeURIComponent(attractionName)}/image.${extension}`;
   }
 
   function renderLocalGallery(municipalityName, attractionName, galleryHost) {
