@@ -609,3 +609,44 @@ body { background: var(--cream); color: var(--ink); }
 .destination-search-result { display:block; width:100%; text-align:left; border:0; border-radius:5px; padding:11px 12px; color:#183744; background:#fff; font-size:13px; cursor:pointer; }
 .destination-search-result:hover,.destination-search-result:focus-visible { background:#edf4ef; }
 .destination-search-empty { margin:0; padding:12px; color:#6d7d7c; font-size:12px; }
+
+
+/* Hero photography: random coastal and highland views, with a readable cinematic overlay. */
+.hero-image {
+  z-index: 0;
+  isolation: isolate;
+  background: linear-gradient(120deg, #0b2b3b, #1c5d58 60%, #6f927c);
+}
+.hero-image .hero-backdrop-layer {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transform: scale(1.06);
+  transition: opacity 1.15s ease, transform 9s ease-out;
+}
+.hero-image .hero-backdrop-layer.is-visible {
+  opacity: .9;
+  transform: scale(1);
+}
+.hero-shade { z-index: 1; }
+.hero-content, .hero-bottom { z-index: 2; }
+.hero-shade {
+  background: linear-gradient(90deg, rgba(7,29,31,.78) 0%, rgba(7,29,31,.48) 52%, rgba(7,29,31,.16) 100%),
+              linear-gradient(0deg, rgba(7,29,31,.42), rgba(7,29,31,.06) 58%);
+}
+.hero h1 { max-width: 760px; text-wrap: balance; }
+@media (max-width: 760px) {
+  .hero h1 { font-size: clamp(39px, 10.5vw, 66px); }
+  .hero-shade {
+    background: linear-gradient(90deg, rgba(7,29,31,.78), rgba(7,29,31,.42)),
+                linear-gradient(0deg, rgba(7,29,31,.42), transparent 60%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-image .hero-backdrop-layer { transition: none !important; transform: none !important; }
+}
