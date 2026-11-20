@@ -42,6 +42,7 @@
 
         const probe = new Image();
         probe.decoding = "async";
+        probe.fetchPriority = opts.priority || "auto";
         probe.referrerPolicy = "no-referrer";
         probe.onload = () => {
           if (myToken !== token) return;
