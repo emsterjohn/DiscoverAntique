@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const panelBackdrop = Backdrop ? Backdrop.create(destinationPhoto, { layerClass: "panel-backdrop-layer" }) : null;
   // Every image comes from the same tourist-spot folders used by the municipality cards.
   const imagePathFor = (municipality, attraction) =>
-    `tourist-spot-images/${encodeURIComponent(municipality)}/${encodeURIComponent(attraction)}/image.jpg`;
+    `tourist-spot-images/${encodeURIComponent(municipality)}/${encodeURIComponent(attraction)}/image.${municipality === "Culasi" && ["Bantang River", "Batbatan Island"].includes(attraction) ? "avif" : "jpg"}`;
   const imagesForMunicipality = place => (place.attractions || []).map(name => imagePathFor(place.name, name));
   const findAvailableImages = paths => Promise.all(paths.map(path => new Promise(resolve => {
     const image = new Image();
