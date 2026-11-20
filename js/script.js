@@ -186,9 +186,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let selectedIndex = -1;
   let isDragging = false;
-  let dragStartX = 0;
-  let dragStartScroll = 0;
-  let didDrag = false;
   let visualFrame = 0;
 
   const getCards = () => Array.from(track.querySelectorAll(".municipality-card"));
@@ -332,84 +329,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (event.key === "ArrowLeft") { event.preventDefault(); moveCarousel(-1); }
   });
 
-  // Controlled swipe: follow the finger, then advance at most one card.
-  // This prevents fast Android flicks from skipping several municipalities.
-  let pointerId = null;
-  let dragStartIndex = selectedIndex;
-  let activePointerType = "";
-
-  track.addEventListener("pointerdown", (event) => {
-    if (event.pointerType === "mouse" && event.button !== 0) return;
-    if (event.target.closest(".municipality-play")) return;
-    pointerId = event.pointerId;
-    activePointerType = event.pointerType;
-    isDragging = true;
-    didDrag = false;
-    dragStartX = event.clientX;
-    dragStartScroll = track.scrollLeft;
-    dragStartIndex = selectedIndex;
-    track.classList.add("is-dragging");
-    track.style.scrollBehavior = "auto";
-    try { track.setPointerCapture(pointerId); } catch (_) {}
-  });
-
-  track.addEventListener("pointermove", (event) => {
-    if (!isDragging || event.pointerId !== pointerId) return;
-    const distance = event.clientX - dragStartX;
-    if (Math.abs(distance) > 6) didDrag = true;
-    if (didDrag) {
-      if (event.cancelable) event.preventDefault();
-      track.scrollLeft = dragStartScroll - distance;
-    }
-  });
-
-  function stopDragging(event) {
-    if (!isDragging || (event && event.pointerId !== pointerId)) return;
-    const releasedPointer = pointerId;
-    const swipeDistance = event && typeof event.clientX === "number"
-      ? event.clientX - dragStartX
-      : 0;
-    const wasTouch = activePointerType === "touch" || activePointerType === "pen";
-    pointerId = null;
-    activePointerType = "";
-    isDragging = false;
-    track.classList.remove("is-dragging");
-    track.style.scrollBehavior = "";
-    if (releasedPointer !== null) {
-      try {
-        if (track.hasPointerCapture(releasedPointer)) track.releasePointerCapture(releasedPointer);
-      } catch (_) {}
-    }
-
-    if (wasTouch) {
-      const threshold = Math.max(34, track.clientWidth * 0.12);
-      let targetIndex = dragStartIndex;
-      if (didDrag && Math.abs(swipeDistance) >= threshold) {
-        targetIndex += swipeDistance < 0 ? 1 : -1;
-      }
-      targetIndex = Math.max(0, Math.min(municipalities.length - 1, targetIndex));
-      centerMunicipality(targetIndex, "smooth");
-    }
-
-    if (didDrag) {
-      const suppressDraggedClick = (clickEvent) => {
-        clickEvent.preventDefault();
-        clickEvent.stopPropagation();
-        clickEvent.stopImmediatePropagation();
-        track.removeEventListener("click", suppressDraggedClick, true);
-      };
-      track.addEventListener("click", suppressDraggedClick, true);
-      window.setTimeout(() => track.removeEventListener("click", suppressDraggedClick, true), 0);
-    }
-    didDrag = false;
-  }
-
-  track.addEventListener("pointerup", stopDragging);
-  track.addEventListener("pointercancel", stopDragging);
-  track.addEventListener("lostpointercapture", stopDragging);
-  window.addEventListener("blur", () => stopDragging());
-  
-
+  // Let Android and other touch browsers handle horizontal swipes natively.
+  // CSS scroll snapping provides a natural, medium-feeling glide in either direction.
 
   // Mobile menu: close after choosing a section or pressing Escape.
   if (menuToggle && mainNav) {
