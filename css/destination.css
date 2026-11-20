@@ -448,3 +448,21 @@ body.lightbox-open { overflow:hidden; }
 @media (prefers-reduced-motion: reduce) {
   .municipality-track { scroll-behavior: auto; scroll-snap-type: x proximity; }
 }
+
+
+/* Mobile tourist-spot header: no hamburger; keep all four links visible. */
+.detail-header .detail-menu-toggle { display:none !important; }
+@media (max-width:760px) {
+  .detail-header { display:flex !important; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:7px 10px; height:auto; min-height:0; padding:9px 4%; }
+  .detail-header > .brand { flex:1 1 100%; min-width:0; }
+  .detail-header > .header-cta { display:none !important; }
+  .detail-header .detail-nav,
+  .detail-header .detail-nav.open {
+    position:static !important; inset:auto !important; display:flex !important; flex:1 1 100%; width:100% !important;
+    flex-direction:row !important; align-items:center; justify-content:space-between; gap:3px; margin:0; padding:6px 0 0;
+    border:0; border-top:1px solid rgba(255,255,255,.16); border-radius:0; background:transparent; box-shadow:none;
+  }
+  .detail-header .detail-nav a { flex:1 1 0; display:flex; min-width:0; min-height:34px; justify-content:center; padding:4px 2px; font-size:clamp(9px,2.8vw,11px); white-space:nowrap; }
+  .detail-page { padding-top:112px; }
+}
+@media (max-width:360px) { .detail-page { padding-top:108px; } .detail-header .detail-nav a { font-size:9px; } }
