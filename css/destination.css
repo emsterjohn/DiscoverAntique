@@ -434,10 +434,17 @@ body.lightbox-open { overflow:hidden; }
   .detail-header .brand-name { font-size: 7px; letter-spacing: .08em; }
 }
 
-/* A touch swipe is handled as a single-card gesture by JavaScript. */
+/* Native, bidirectional touch scrolling for Android and mobile browsers.
+   Keep browser momentum and centered snapping; avoid custom pointer capture,
+   which can cause jitter, vibration, and blocked right-to-left/left-to-right gestures. */
 .municipality-track {
-  touch-action: pan-y;
-  scroll-snap-type: none;
-  -webkit-overflow-scrolling: auto;
+  touch-action: pan-x pan-y;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
-.municipality-track.is-dragging { scroll-snap-type: none !important; }
+.municipality-track.is-dragging { cursor: grab; }
+@media (prefers-reduced-motion: reduce) {
+  .municipality-track { scroll-behavior: auto; scroll-snap-type: x proximity; }
+}
