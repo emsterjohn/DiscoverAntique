@@ -22,44 +22,43 @@ document.addEventListener("DOMContentLoaded", () => {
   const Backdrop = window.DiscoverBackdrop;
   const sectionBackdrop = Backdrop && municipalitySection ? Backdrop.create(municipalitySection, { layerClass: "section-backdrop-layer" }) : null;
   const panelBackdrop = Backdrop ? Backdrop.create(destinationPhoto, { layerClass: "panel-backdrop-layer" }) : null;
-  // One image per attraction folder. Every website section reuses these same files.
+  // Every image comes from the same tourist-spot folders used by the municipality cards.
   const imagePathFor = (municipality, attraction) =>
     `tourist-spot-images/${encodeURIComponent(municipality)}/${encodeURIComponent(attraction)}/image.jpg`;
   const imagesForMunicipality = place => (place.attractions || []).map(name => imagePathFor(place.name, name));
-  const allTouristSpotImages = municipalities.flatMap(imagesForMunicipality);
   const findAvailableImages = paths => Promise.all(paths.map(path => new Promise(resolve => {
     const image = new Image();
     image.onload = () => resolve(path);
     image.onerror = () => resolve(null);
     image.src = path;
   }))).then(results => results.filter(Boolean));
-  let selectedBackgroundTimer = 0;
-  let selectedBackgroundPaths = [];
-  let selectedBackgroundIndex = -1;
-  let selectedBackgroundRequest = 0;
-  function showNextSelectedBackground() {
-    if (!selectedBackgroundPaths.length) {
-      if (sectionBackdrop) sectionBackdrop.show(null);
-      if (panelBackdrop) panelBackdrop.show(null);
-      return;
-    }
-    let next = selectedBackgroundPaths.length > 1 ? Math.floor(Math.random() * selectedBackgroundPaths.length) : 0;
-    if (next === selectedBackgroundIndex && selectedBackgroundPaths.length > 1) next = (next + 1) % selectedBackgroundPaths.length;
-    selectedBackgroundIndex = next;
-    if (sectionBackdrop) sectionBackdrop.show(selectedBackgroundPaths[next]);
-    if (panelBackdrop) panelBackdrop.show(selectedBackgroundPaths[next]);
-  }
-  function setSelectedBackground(place) {
-    window.clearInterval(selectedBackgroundTimer);
-    const request = ++selectedBackgroundRequest;
-    selectedBackgroundPaths = [];
-    selectedBackgroundIndex = -1;
-    findAvailableImages(imagesForMunicipality(place)).then(paths => {
-      if (request !== selectedBackgroundRequest) return;
-      selectedBackgroundPaths = paths;
-      showNextSelectedBackground();
-      if (selectedBackgroundPaths.length > 1) selectedBackgroundTimer = window.setInterval(showNextSelectedBackground, 3000);
-    });
+
+  const attractionEntries = municipalities.flatMap(place => (place.attractions || []).map(name => ({
+    municipality: place.name,
+    name,
+    category: place.details && place.details[name] ? place.details[name].category || "" : "",
+    description: place.details && place.details[name] ? place.details[name].description || "" : "",
+    path: imagePathFor(place.name, name)
+  })));
+  const matchesAny = (entry, terms) => {
+    const text = `${entry.category} ${entry.name} ${entry.description}`.toLowerCase();
+    return terms.some(term => text.includes(term));
+  };
+  const pathsForCategory = terms => attractionEntries
+    .filter(entry => matchesAny(entry, terms))
+    .map(entry => entry.path);
+
+  // Each featured slideshow is restricted to images that match its caption.
+  const featureImagePools = {
+    coast: pathsForCategory(["coast", "coastal", "island", "marine", "beach", "seaside", "shore", "bay"]),
+    water: pathsForCategory(["river", "spring", "waterfall", "water", "lake", "hot bath", "kawa"]),
+    highlands: pathsForCategory(["mountain", "highland", "hiking", "cave", "terrace", "viewpoint", "bukid", "hill"])
+  };
+  const heroImagePool = [...new Set([...featureImagePools.coast, ...featureImagePools.highlands])];
+
+  function syncSelectedBackdrop(path) {
+    if (sectionBackdrop) sectionBackdrop.show(path || null);
+    if (panelBackdrop) panelBackdrop.show(path || null);
   }
 
   const createCard = (place, index, copyIndex) => {
@@ -124,7 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   {
     const interval = 3000;
-    function attachSlideshow(host, paths, layers) {
+    function attachSlideshow(host, paths, layers, onImageChange) {
       if (!paths.length) return;
       let active = 0, current = -1, timer = 0, running = false, availablePaths = [], runToken = 0;
       const show = () => {
@@ -132,6 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let next = availablePaths.length > 1 ? Math.floor(Math.random() * availablePaths.length) : 0;
         if (next === current && availablePaths.length > 1) next = (next + 1) % availablePaths.length;
         current = next;
+        if (onImageChange) onImageChange(availablePaths[next]);
         const target = 1 - active;
         layers[target].style.backgroundImage = `url("${availablePaths[next].replace(/"/g, "%22")}")`;
         layers[target].classList.add("is-visible");
@@ -162,14 +162,25 @@ document.addEventListener("DOMContentLoaded", () => {
       const place = municipalities.find(item => item.name === card.dataset.municipality);
       const paths = place ? imagesForMunicipality(place) : [];
       const layers = card.querySelectorAll(".card-image-layer");
-      attachSlideshow(card, paths, layers);
+      attachSlideshow(card, paths, layers, path => {
+        card.dataset.currentImage = path;
+        if (Number(card.dataset.index) === selectedIndex) syncSelectedBackdrop(path);
+      });
     });
 
-    // The three province feature cards reuse the same pool of tourist-spot photos.
+    // The hero uses coastal and highland imagery; each feature card uses its own category.
+    const heroImage = document.querySelector(".hero-image");
+    if (heroImage) {
+      const layers = [document.createElement("span"), document.createElement("span")];
+      layers.forEach(layer => { layer.className = "hero-backdrop-layer"; heroImage.appendChild(layer); });
+      attachSlideshow(heroImage, heroImagePool, layers);
+    }
+
     document.querySelectorAll("[data-province-slot]").forEach(host => {
+      const slot = host.dataset.provinceSlot;
       const layers = [document.createElement("span"), document.createElement("span")];
       layers.forEach(layer => { layer.className = "province-photo-layer"; host.appendChild(layer); });
-      attachSlideshow(host, allTouristSpotImages, layers);
+      attachSlideshow(host, featureImagePools[slot] || [], layers);
     });
   }
 
@@ -208,7 +219,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     destinationSection.classList.add("is-changing");
-    setSelectedBackground(place);
+    const selectedCard = getCards().find(card => Number(card.dataset.index) === index);
+    syncSelectedBackdrop(selectedCard && selectedCard.dataset.currentImage ? selectedCard.dataset.currentImage : null);
     const photoCredit = document.getElementById("municipalityPhotoCredit");
     if (photoCredit) photoCredit.textContent = "Municipality backgrounds and cards automatically reuse photos from that municipality’s tourist-spot folders.";
     window.setTimeout(() => destinationSection.classList.remove("is-changing"), 350);
