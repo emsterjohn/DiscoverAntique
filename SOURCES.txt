@@ -22,7 +22,6 @@ Barbaza
 
 Belison
 - Municipal cultural heritage inventory: https://belisonantique.gov.ph/cultural-heritage/
-- Pagunsan Ancestral House: https://cmpg.upv.edu.ph/heritage/pagunsan-ancestral-house/
 
 Bugasong
 - Bagtason Loom Weaving: https://cmpg.upv.edu.ph/heritage/paghabul-sa-bagtasonloom-weaving-in-bagtason/
@@ -42,7 +41,6 @@ Hamtic
 
 Laua-an
 - Cultural mapping: https://cmpg.upv.edu.ph/heritage-location/antique/laua-an/
-- Jose Rizal Monument: https://cmpg.upv.edu.ph/heritage/jose-rizal-monument/
 
 Libertad
 - Bongan-bongan Spring: https://cmpg.upv.edu.ph/heritage/bongan-bongan-spring/
@@ -160,7 +158,6 @@ The attraction detail hero now displays only a photo listed in that attraction's
 
 Additional attraction-specific photo sources added in this update:
 - Libertad — Bariw Mat Weaving: Cultural Mapping of Panay and Guimaras, UP Visayas; photo credit Dangielyn B. Unilongo (2024): https://cmpg.upv.edu.ph/heritage/pagrara-it-banig-banig-making/
-- Laua-an — Traditional Boat-Making in Lindero: Cultural Mapping of Panay and Guimaras, UP Visayas; photo credit Albert Gerona (2021): https://cmpg.upv.edu.ph/heritage/pag-obra-kang-baruto/
 - Laua-an — Bukid Linintian: Cultural Mapping of Panay and Guimaras, UP Visayas; photo credit Jefferson D. Sillario (2024): https://cmpg.upv.edu.ph/heritage/bukid-linintian/
 
 PHOTO MATCH AUDIT
@@ -173,7 +170,6 @@ The attraction detail hero now displays only a photo listed in that attraction's
 
 Additional attraction-specific photo sources added in this update:
 - Libertad — Bariw Mat Weaving: Cultural Mapping of Panay and Guimaras, UP Visayas; photo credit Dangielyn B. Unilongo (2024): https://cmpg.upv.edu.ph/heritage/pagrara-it-banig-banig-making/
-- Laua-an — Traditional Boat-Making in Lindero: Cultural Mapping of Panay and Guimaras, UP Visayas; photo credit Albert Gerona (2021): https://cmpg.upv.edu.ph/heritage/pag-obra-kang-baruto/
 - Laua-an — Bukid Linintian: Cultural Mapping of Panay and Guimaras, UP Visayas; photo credit Jefferson D. Sillario (2024): https://cmpg.upv.edu.ph/heritage/bukid-linintian/
 - Bugasong — Bagtason Loom Weaving: Cultural Mapping of Panay and Guimaras, UP Visayas; photo credit Clavil Tadi Fortaleza (2021): https://cmpg.upv.edu.ph/heritage/paghabul-sa-bagtasonloom-weaving-in-bagtason/
 - Tobias Fornier — Pangatas sa Suba: Cultural Mapping of Panay and Guimaras, UP Visayas; photo credit Vince Villodres (2024): https://cmpg.upv.edu.ph/heritage/pangatas-sa-suba/
