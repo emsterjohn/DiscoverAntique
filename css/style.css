@@ -650,3 +650,24 @@ body { background: var(--cream); color: var(--ink); }
 @media (prefers-reduced-motion: reduce) {
   .hero-image .hero-backdrop-layer { transition: none !important; transform: none !important; }
 }
+
+
+/* Android touch carousel: native horizontal scrolling + browser momentum + CSS snap.
+   JS only updates the 3D card transforms; it does not take over touch gestures. */
+.municipality-track {
+  touch-action: pan-x pan-y;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: auto;
+}
+.municipality-track.is-dragging {
+  scroll-snap-type: none !important;
+  scroll-behavior: auto !important;
+}
+.municipality-card {
+  transition: box-shadow .42s cubic-bezier(.2,.7,.2,1), filter .42s ease, opacity .42s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .municipality-track { scroll-snap-type: x proximity; }
+}
