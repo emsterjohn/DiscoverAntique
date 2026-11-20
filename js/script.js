@@ -26,6 +26,54 @@ document.addEventListener("DOMContentLoaded", () => {
   const imagePathFor = (municipality, attraction) =>
     `tourist-spot-images/${encodeURIComponent(municipality)}/${encodeURIComponent(attraction)}/image.${municipality === "Culasi" && ["Bantang River", "Batbatan Island"].includes(attraction) ? "avif" : "jpg"}`;
   const imagesForMunicipality = place => (place.attractions || []).map(name => imagePathFor(place.name, name));
+
+  // Prepare one photo for every municipality before visitors begin swiping.
+  const preloadedImages = new Map();
+  function preloadImage(path) {
+    if (preloadedImages.has(path)) return preloadedImages.get(path);
+    const promise = new Promise(resolve => {
+      const image = new Image();
+      image.onload = async () => {
+        if (image.decode) { try { await image.decode(); } catch (_) {} }
+        resolve(true);
+      };
+      image.onerror = () => resolve(false);
+      image.src = path;
+    });
+    preloadedImages.set(path, promise);
+    return promise;
+  }
+  municipalities.forEach((place, index) => {
+    const firstPath = imagesForMunicipality(place)[0];
+    if (!firstPath) return;
+    preloadImage(firstPath).then(loaded => {
+      if (!loaded) return;
+      const card = track.querySelector(`.municipality-card[data-index="${index}"]`);
+      const firstLayer = card && card.querySelector(".card-image-layer");
+      if (firstLayer && !card.dataset.currentImage) {
+        firstLayer.style.backgroundImage = `url("${firstPath.replace(/"/g, "%22")}")`;
+        firstLayer.classList.add("is-visible");
+        card.dataset.currentImage = firstPath;
+      }
+    });
+  });
+  // Warm the remaining attraction photos when the browser is idle, in small batches.
+  const remainingPhotoPaths = [...new Set(municipalities.flatMap(place => imagesForMunicipality(place)).filter((path, i, all) => path !== imagesForMunicipality(municipalities[0])[0]))];
+  const warmRemainingPhotos = () => {
+    let cursor = 0;
+    const loadBatch = () => {
+      const batch = remainingPhotoPaths.slice(cursor, cursor + 4);
+      cursor += batch.length;
+      batch.forEach(preloadImage);
+      if (cursor < remainingPhotoPaths.length) {
+        if ("requestIdleCallback" in window) window.requestIdleCallback(loadBatch, { timeout: 1800 });
+        else window.setTimeout(loadBatch, 500);
+      }
+    };
+    loadBatch();
+  };
+  if ("requestIdleCallback" in window) window.requestIdleCallback(warmRemainingPhotos, { timeout: 1200 });
+  else window.setTimeout(warmRemainingPhotos, 700);
   const findAvailableImages = paths => Promise.all(paths.map(path => new Promise(resolve => {
     const image = new Image();
     image.onload = () => resolve(path);
@@ -329,8 +377,59 @@ document.addEventListener("DOMContentLoaded", () => {
     if (event.key === "ArrowLeft") { event.preventDefault(); moveCarousel(-1); }
   });
 
-  // Let Android and other touch browsers handle horizontal swipes natively.
-  // CSS scroll snapping provides a natural, medium-feeling glide in either direction.
+  // Controlled pointer swipes: one gesture advances at most one municipality.
+  let pointerStartX = 0, pointerStartY = 0, pointerStartScroll = 0;
+  let pointerStartIndex = 0, pointerActive = false, horizontalDrag = false;
+  let suppressNextClick = false;
+  const swipeThreshold = () => Math.max(42, Math.min(76, track.clientWidth * 0.13));
+
+  track.addEventListener("pointerdown", event => {
+    if (!event.isPrimary || (event.pointerType === "mouse" && event.button !== 0)) return;
+    pointerStartX = event.clientX;
+    pointerStartY = event.clientY;
+    pointerStartScroll = track.scrollLeft;
+    pointerStartIndex = Math.max(0, selectedIndex);
+    pointerActive = true;
+    horizontalDrag = false;
+  });
+
+  track.addEventListener("pointermove", event => {
+    if (!pointerActive) return;
+    const dx = event.clientX - pointerStartX;
+    const dy = event.clientY - pointerStartY;
+    if (!horizontalDrag) {
+      if (Math.abs(dy) > Math.abs(dx) || Math.abs(dx) < 8) return;
+      horizontalDrag = true;
+      track.classList.add("is-dragging");
+      track.setPointerCapture(event.pointerId);
+    }
+    event.preventDefault();
+    track.scrollLeft = pointerStartScroll - dx;
+  });
+
+  function finishPointerSwipe(event) {
+    if (!pointerActive) return;
+    pointerActive = false;
+    if (!horizontalDrag) return;
+    const dx = event.clientX - pointerStartX;
+    const moved = Math.abs(dx);
+    const direction = dx < 0 ? 1 : -1;
+    const target = moved >= swipeThreshold()
+      ? Math.max(0, Math.min(municipalities.length - 1, pointerStartIndex + direction))
+      : pointerStartIndex;
+    suppressNextClick = moved >= 8;
+    track.classList.remove("is-dragging");
+    centerMunicipality(target);
+    if (target !== selectedIndex) selectMunicipality(target);
+    window.setTimeout(() => { suppressNextClick = false; }, 350);
+  }
+  track.addEventListener("pointerup", finishPointerSwipe);
+  track.addEventListener("pointercancel", finishPointerSwipe);
+  track.addEventListener("click", event => {
+    if (!suppressNextClick) return;
+    event.preventDefault();
+    event.stopPropagation();
+  }, true);
 
   // Mobile menu: close after choosing a section or pressing Escape.
   if (menuToggle && mainNav) {
