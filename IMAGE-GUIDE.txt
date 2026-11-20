@@ -1,0 +1,42 @@
+DISCOVER ANTIQUE — SIMPLE IMAGE GUIDE
+=====================================
+
+ONLY ONE IMAGE FOLDER IS REQUIRED: tourist-spot-images
+
+Folder structure:
+
+tourist-spot-images/
+  Anini-y/
+    Sira-an Hot Spring/
+      image.jpg
+    Nogas Island/
+      image.jpg
+  Hamtic/
+    General Leandro Fullon National Shrine/
+      image.jpg
+
+HOW TO ADD A PHOTO
+------------------
+1. Open tourist-spot-images.
+2. Open the municipality folder.
+3. Open the exact tourist-spot folder.
+4. Put ONE photo in that folder and name it exactly image.jpg.
+
+No manifest editing is required. The website builds the image paths automatically from its municipality and tourist-spot names. Folder names must match the included names exactly, including spaces, punctuation, and capitalization.
+
+HOW THE SAME PHOTOS ARE REUSED
+------------------------------
+- Municipality carousel card: rotates through photos belonging to that municipality.
+- Selected municipality background: uses the same municipality photo pool.
+- Tourist-spot detail page and photo viewer: uses that attraction's own image.jpg.
+- Three province feature cards: rotate through the same photo pool from all municipalities.
+
+The rotation interval is 3 seconds. If a tourist spot has no image.jpg yet, it is skipped by the rotating backgrounds/cards and its detail page shows the clean fallback. Photos from another municipality are never substituted.
+
+IMAGE RECOMMENDATIONS
+---------------------
+Use JPG/JPEG images. Landscape photos around 1600 px wide work well for backgrounds; the website uses cover sizing, so photos fill the area without stretching and may crop slightly.
+
+GITHUB PAGES
+------------
+Upload the entire tourist-spot-images folder along with index.html, destination.html, css/, and js/. Git does not preserve empty folders, so keep the included README.txt placeholders until you add photos.

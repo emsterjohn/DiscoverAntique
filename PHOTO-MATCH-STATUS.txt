@@ -1,0 +1,239 @@
+NOTE FOR THE CURRENT LOCAL ZIP
+===============================
+The URLs and photo-match notes below are retained as historical research/attribution references only. The website does not load these remote photos. No photo files are bundled in this ZIP. Add one image.jpg to each matching tourist-spot folder under tourist-spot-images. No manifest editing is required; see IMAGE-GUIDE.txt.
+
+DISCOVER ANTIQUE — PHOTO MATCH STATUS
+Attraction-specific photos: 36 / 56
+
+HOW "MATCHED" WAS DETERMINED
+- Each photo below comes from a page whose own caption/alt text/title names that exact attraction.
+- The photos were NOT visually re-inspected during this update (no image download/preview was available). Please open each detail page once and confirm by eye.
+- No municipality cover and no stock photo is ever used as an attraction background. If a photo is missing or fails to load, the page shows a clean gradient plus a notice.
+
+A. ATTRACTIONS WITH A SOURCE-MATCHED PHOTO (36)
+- Anini-y: Sira-an Hot Spring
+    photo: https://wengwengwanders.wordpress.com/wp-content/uploads/2016/08/img_1176.jpg?crop=1&h=1500&w=2000
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+    source page: https://wengwengwanders.wordpress.com/2016/08/08/when-in-antique-take-a-dip-at-sira-an-hot-springs/
+- Anini-y: San Juan de Nepomuceno Church
+    photo: https://3.bp.blogspot.com/-oX6SWxSrLtw/UydDBQrJslI/AAAAAAAALAA/4PTiilwcJYA/s1600/San%2BJuan%2BNapumuceno%2BParish%2BChurch%2BAnini-y%2BAntique-1383.jpg
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+    source page: https://www.elaljanelasola.com/2014/04/antique-st-john-church-of-anini-y_11.html
+- Anini-y: Nogas Island
+    photo: https://commons.wikimedia.org/wiki/Special:FilePath/Nogas_Island_Marine_Reserve_and_Sanctuary.jpg
+    rights: OPEN-LICENSE (Wikimedia Commons; check file page for license/credit)
+    source page: https://commons.wikimedia.org/wiki/File:Nogas_Island_Marine_Reserve_and_Sanctuary.jpg
+- Barbaza: Nalupa River
+    photo: https://cmpg.upv.edu.ph/wp-content/uploads/2026/02/heritage-7424-1Z_59f1YpMlug9d53wLQG9ta95Z8WKxsi-800x1024.jpg
+    rights: OFFICIAL/INSTITUTIONAL (confirm reuse permission with the LGU/UPV)
+    source page: https://cmpg.upv.edu.ph/heritage/nalupa-river/
+- Bugasong: Bagtason Loom Weaving
+    photo: https://cmpg.upv.edu.ph/wp-content/uploads/2026/02/heritage-7581-1wdYANkZUnOatulO5gzkRS-yWVJYLT_K5.png
+    rights: OFFICIAL/INSTITUTIONAL (confirm reuse permission with the LGU/UPV)
+    source page: https://cmpg.upv.edu.ph/heritage/paghabul-sa-bagtasonloom-weaving-in-bagtason/
+- Caluya: Caluya Island
+    photo: https://theblueink.com/wp-content/uploads/images/caluya-island-antique-02.jpg
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+    source page: https://www.theblueink.com/exploring-caluya-island/
+- Caluya: Semirara Island
+    photo: https://commons.wikimedia.org/wiki/Special:FilePath/Panian_mine_full.jpg
+    rights: OPEN-LICENSE (Wikimedia Commons; check file page for license/credit)
+    source page: https://commons.wikimedia.org/wiki/File:Panian_mine_full.jpg
+- Culasi: Mararison Island
+    photo: https://commons.wikimedia.org/wiki/Special:FilePath/Bay_of_Mararison_island.jpg
+    rights: OPEN-LICENSE (Wikimedia Commons; check file page for license/credit)
+    source page: https://commons.wikimedia.org/wiki/File:Bay_of_Mararison_island.jpg
+- Culasi: Mount Madja-as
+    photo: https://cdn.mountains.com.ph/photos/1ee86552-3583-45f2-821d-697f5a46ed4b/conversions/2ed84e778d90d32ff88d83a4bd949fcd-landscape.jpg
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+    source page: https://mountains.com.ph/philippines/visayas/region-vi-western-visayas/antique/culasi/mount-madjaas
+- Culasi: Bantang River
+    photo: https://culasiantique.gov.ph/wp-content/uploads/2022/02/Bantang-River.png
+    rights: OFFICIAL/INSTITUTIONAL (confirm reuse permission with the LGU/UPV)
+    source page: https://culasiantique.gov.ph/municipal-tourism-office/
+- Culasi: Batbatan Island
+    photo: https://d3fphkxyf5o5bm.cloudfront.net/image-resize/format%3Dwebp%2Cw%3D1200/QwRY54Li1HMwD7oNfpeVSOPPHV3roYsyfvWCs8AMxG
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+    source page: https://mindtrip.ai/attraction/culasi-visayas/batbatan-island/at-Np0049vL
+- Hamtic: General Leandro Fullon National Shrine
+    photo: https://hamtic.gov.ph/wp-content/uploads/2025/03/IMG_8744-1024x683.jpg
+    rights: OFFICIAL/INSTITUTIONAL (confirm reuse permission with the LGU/UPV)
+    source page: https://hamtic.gov.ph/news/151st-birth-anniversary-of-general-leandro-locsin-fullon/
+- Hamtic: Simbanan Rock Formation
+    photo: https://cmpg.upv.edu.ph/wp-content/uploads/2026/02/heritage-7434-147gRYkMy0GtE5zCzWyd23b5LV2vACtvh-1024x768.jpg
+    rights: OFFICIAL/INSTITUTIONAL (confirm reuse permission with the LGU/UPV)
+    source page: https://cmpg.upv.edu.ph/heritage/simbanan/
+- Laua-an: Bukid Linintian
+    photo: https://cmpg.upv.edu.ph/wp-content/uploads/2026/02/heritage-7436-1CN3WGgADEdlKSFQQ5THOGTVqBJOHPfCo-1024x768.jpg
+    rights: OFFICIAL/INSTITUTIONAL (confirm reuse permission with the LGU/UPV)
+    source page: https://cmpg.upv.edu.ph/heritage/bukid-linintian/
+- Laua-an: Traditional Boat-Making in Lindero
+    photo: https://cmpg.upv.edu.ph/wp-content/uploads/2026/02/heritage-7587-1O5Rfosz-iKEos1cMvFzShcnFTpYNWfsE.png
+    rights: OFFICIAL/INSTITUTIONAL (confirm reuse permission with the LGU/UPV)
+    source page: https://cmpg.upv.edu.ph/heritage/pag-obra-kang-baruto/
+- Libertad: Bongan-bongan Spring
+    photo: https://farm5.staticflickr.com/4563/38362375456_42384705fc_c.jpg
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+    source page: https://adrenalineromance.com/2016/10/06/experience-antique-the-stunning-natural-and-cultural-wonders-of-libertad/
+- Libertad: Bariw Mat Weaving (Pagrara it Banig)
+    photo: https://cmpg.upv.edu.ph/wp-content/uploads/2026/02/heritage-7563-1JDHnJ2chJvk_kq9Kl0e9-4c266WHLVT7-768x1024.jpg
+    rights: OFFICIAL/INSTITUTIONAL (confirm reuse permission with the LGU/UPV)
+    source page: https://cmpg.upv.edu.ph/heritage/pagrara-it-banig-banig-making/
+- Pandan: Malumpati Cold Spring
+    photo: https://commons.wikimedia.org/wiki/Special:FilePath/Malumpati_Cold_Spring.jpg
+    rights: OPEN-LICENSE (Wikimedia Commons; check file page for license/credit)
+    source page: https://commons.wikimedia.org/wiki/File:Malumpati_Cold_Spring.jpg
+- Pandan: Bugang River
+    photo: https://farm5.staticflickr.com/4523/38362439196_88efcea1a3_c.jpg
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+    source page: https://adrenalineromance.com/
+- Pandan: Duyong Beach
+    photo: https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/50/83/9d/white-beach.jpg?h=1200&s=1&w=1200
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+    source page: https://www.tripadvisor.es/Attraction_Review-g1838072-d7349186-Reviews-Duyong_Beach-Pandan_Antique_Province_Panay_Island_Visayas.html
+- Pandan: Mount Mab-o
+    photo: https://pandan-antique.gov.ph/wp-content/uploads/photo-gallery/imported_from_media_libray/mab-o.jpg?bwg=1595316298
+    rights: OFFICIAL/INSTITUTIONAL (confirm reuse permission with the LGU/UPV)
+    source page: https://pandan-antique.gov.ph/mab-o/
+- Patnongon: Casa Tribunal de Patnongon
+    photo: https://commons.wikimedia.org/wiki/Special:FilePath/Facade_of_Casa_Tribunal_de_Patnongon_-_NHCP_-_1.jpg
+    rights: OPEN-LICENSE (Wikimedia Commons; check file page for license/credit)
+    source page: https://commons.wikimedia.org/wiki/Category:Facades_in_the_Philippines
+- Patnongon: Old Church and Convent of Patnongon
+    photo: https://thehappytrip.com/wp-content/uploads/2017/12/20615864_10154824255058017_2450103006525494829_o.jpg
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+    source page: https://thehappytrip.com/2018/01/2018-antique-travel-guide-tourist-attractions-budget-resorts/
+- San Jose de Buenavista: Balay na Bato (Casa Gella-Azurin)
+    photo: https://media.philstar.com/photos/2020/07/10/house-1_2020-07-10_16-11-59.jpg
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+    source page: https://www.philstar.com/lifestyle/modern-living/2020/07/11/2027044/stone-house-antique-puts-us-touch-glorious-past
+- San Remigio: Antique Rice Terraces
+    photo: https://1.bp.blogspot.com/-RCy7dV-cB80/YFrjprgU54I/AAAAAAAA_xQ/qREIosZ5PGM9tbjIP4PeKmRiXqjPdQwkACLcBGAsYHQ/w640-h426/Antique%2BRice%2BTerraces%2B2.JPG
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+    source page: https://www.nomadicexperiences.com/2020/05/why-this-province-is-underrated-tourist.html
+- San Remigio: Danao Lake
+    photo: https://sanremigioantique.gov.ph/wp-content/uploads/2026/02/6.png
+    rights: OFFICIAL/INSTITUTIONAL (confirm reuse permission with the LGU/UPV)
+    source page: https://sanremigioantique.gov.ph/
+- San Remigio: Highland Strawberry Garden
+    photo: https://sanremigioantique.gov.ph/wp-content/uploads/2026/03/Strawberry-Garden-1.jpg
+    rights: OFFICIAL/INSTITUTIONAL (confirm reuse permission with the LGU/UPV)
+    source page: https://sanremigioantique.gov.ph/
+- Sebaste: Igpasungaw Falls
+    photo: https://farm5.staticflickr.com/4610/25485817347_d6d0397eb1_c.jpg
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+    source page: https://adrenalineromance.com/2016/10/20/experience-antique-igpasungaw-falls-in-sebaste-a-grand-staircase-into-the-wild/
+- Sibalom: Indaga Cold Spring
+    photo: https://sibalom.gov.ph/wp-content/uploads/2023/02/indaga.jpg
+    rights: OFFICIAL/INSTITUTIONAL (confirm reuse permission with the LGU/UPV)
+    source page: https://sibalom.gov.ph/tourism/
+- Sibalom: Sibalom Natural Park
+    photo: https://i.headtopics.com/images/2024/5/8/sunstaronline/antique-to-introduce-sibalom-natural-park-as-ecoto-antique-to-introduce-sibalom-natural-park-as-ecoto-A6D2ABC0F346CD134798CB76AE524D26.webp
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+    source page: https://ph.headtopics.com/news/antique-to-introduce-sibalom-natural-park-as-ecotourism-52179404
+- Sibalom: Mau-it River
+    photo: https://dailyguardian.com.ph/wp-content/uploads/2023/03/Rainbow-River-w.jpg
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+    source page: https://dailyguardian.com.ph/antiques-rainbow-river-also-has-worlds-largest-flowers/
+- Tibiao: Kawa Hot Bath
+    photo: https://getaway.ph/storage/2021/10/Kawa-Hot-Bath-Photo-by-Lisa-Marie-%40lostwithleesa.jpeg
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+    source page: https://getaway.ph/blog/arts-and-culture/a-kawa-bunga-moment-in-antique-with-a-hot-bath-in-an-on-oversized-cauldron/
+- Tibiao: Bugtong Bato Falls
+    photo: https://i0.wp.com/langyaw.com/wp-content/uploads/2015/06/bugtong-bato-falls-antique-8.jpg?resize=930%2C620&ssl=1
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+    source page: https://langyaw.com/2015/06/18/challenging-multi-level-bugtong-bato-falls/
+- Tobias Fornier: Pangatas sa Suba
+    photo: https://cmpg.upv.edu.ph/wp-content/uploads/2026/02/heritage-7577-1Q-_TsBSXKlvNN47ve-q0b0POWzGxN7LQ.jpg
+    rights: OFFICIAL/INSTITUTIONAL (confirm reuse permission with the LGU/UPV)
+    source page: https://cmpg.upv.edu.ph/heritage/pangatas-sa-suba/
+- Valderrama: Villa Valderrama Mountain Resort
+    photo: https://dailyguardian.com.ph/wp-content/uploads/2024/02/Villa-Valderrama3.jpg
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+    source page: https://dailyguardian.com.ph/villa-valderrama-natures-pride-at-the-heart-of-antique/
+- Valderrama: Mount Igcoron
+    photo: https://i0.wp.com/www.tanawexplorer.com/wp-content/uploads/2024/06/Mt-Igcoron-Valderrama-2.jpg?fit=1200%2C700&ssl=1
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+    source page: https://www.tanawexplorer.com/valderrama-trilogy-mt-igcoron/
+
+B. ATTRACTIONS STILL NEEDING A VERIFIED PHOTO (20) — gradient fallback is shown
+- Barbaza: Mt. Nangtud
+- Belison: Mt. Guinobatan and Cave
+- Belison: Centennial Acacia Trees
+- Belison: Sinaja Bridge
+- Belison: Pagunsan Ancestral House
+- Laua-an: Jose Rizal Monument, Guisijan
+- Pandan: Baybay Beach
+- San Jose de Buenavista: Old San Pedro Church Ruins
+- San Jose de Buenavista: St. Joseph the Worker Cathedral
+- San Jose de Buenavista: National Museum of the Philippines – Antique
+- San Jose de Buenavista: San Jose Esplanade Boulevard
+- San Remigio: Padlusan Adventure Park
+- San Remigio: Bato Cueva
+- San Remigio: Montevalle
+- Sebaste: Feast of St. Blaise and Parish Devotion
+- Sebaste: Stampa of Nuestra Señora del Carmen
+- Sibalom: Sta. Rita de Cascia Parish Church Bells
+- Tibiao: Tibiao River Adventure
+- Tobias Fornier: San Nicolas de Tolentino Parish Convent and Records
+- Tobias Fornier: Serequelas Trees of Balud
+
+C. MUNICIPALITY COVER PHOTOS (homepage carousel + section background)
+- Anini-y: Wengweng Wanders · original photo source
+    https://wengwengwanders.wordpress.com/wp-content/uploads/2016/08/img_1176.jpg?crop=1&h=1500&w=2000
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+- Barbaza: University of Antique Cultural Mappers, 2024 · Cultural Mapping of Panay and Guimaras
+    https://cmpg.upv.edu.ph/wp-content/uploads/2026/02/heritage-7424-1Z_59f1YpMlug9d53wLQG9ta95Z8WKxsi-800x1024.jpg
+    rights: OFFICIAL/INSTITUTIONAL (confirm reuse permission with the LGU/UPV)
+- Belison: Wikimedia Commons · Belison mountains and rice field
+    https://upload.wikimedia.org/wikipedia/commons/4/40/Belison_mountains_and_rice_field_%28Iloilo-Antique_Road%2C_Belison%2C_Antique%3B_01-24-2023%29.jpg
+    rights: OPEN-LICENSE (Wikimedia Commons; check file page for license/credit)
+- Bugasong: Mindtrip · Mount Igmatongtong photo
+    https://d3fphkxyf5o5bm.cloudfront.net/image-resize/format%3Dwebp%2Cw%3D1200/QwRY54Li1HMwD7oNfosGesoBeljqzAV127GI4qMHzV
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+- Caluya: The Blue Ink · Exploring Caluya Island
+    https://theblueink.com/wp-content/uploads/images/caluya-island-antique-02.jpg
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+- Culasi: Paradise Chronicle · CC BY-SA 4.0
+    https://commons.wikimedia.org/wiki/Special:FilePath/Bay_of_Mararison_island.jpg
+    rights: OPEN-LICENSE (Wikimedia Commons; check file page for license/credit)
+- Hamtic: Municipality of Hamtic · official website
+    https://hamtic.gov.ph/wp-content/uploads/2025/03/IMG_8744-1024x683.jpg
+    rights: OFFICIAL/INSTITUTIONAL (confirm reuse permission with the LGU/UPV)
+- Laua-an: Manila Bulletin · Laua-an mountain road feature
+    https://mb.com.ph/manilabulletin/uploads/images/2025/10/23/52688.webp
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+- Libertad: Adrenaline Romance / Flickr · Libertad feature
+    https://farm5.staticflickr.com/4563/38362375456_42384705fc_c.jpg
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+- Pandan: Municipality of Pandan · official Mab-O Mountain page
+    https://pandan-antique.gov.ph/wp-content/uploads/photo-gallery/imported_from_media_libray/mab-o.jpg?bwg=1595316298
+    rights: OFFICIAL/INSTITUTIONAL (confirm reuse permission with the LGU/UPV)
+- Patnongon: The Happy Trip · Antique travel guide
+    https://thehappytrip.com/wp-content/uploads/2017/12/20615864_10154824255058017_2450103006525494829_o.jpg
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+- San Jose de Buenavista: Philstar · heritage house feature
+    https://media.philstar.com/photos/2020/07/10/house-1_2020-07-10_16-11-59.jpg
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+- San Remigio: Municipality of San Remigio · official tourism website
+    https://sanremigioantique.gov.ph/wp-content/uploads/2026/02/1-1-e1774861210417.png
+    rights: OFFICIAL/INSTITUTIONAL (confirm reuse permission with the LGU/UPV)
+- Sebaste: Adrenaline Romance / Flickr · Igpasungaw Falls feature
+    https://farm5.staticflickr.com/4610/25485817347_d6d0397eb1_c.jpg
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+- Sibalom: Municipality of Sibalom · official tourism website
+    https://sibalom.gov.ph/wp-content/uploads/2023/02/indaga.jpg
+    rights: OFFICIAL/INSTITUTIONAL (confirm reuse permission with the LGU/UPV)
+- Tibiao: Lisa-Marie / Getaway.ph · Kawa Hot Bath feature
+    https://getaway.ph/storage/2021/10/Kawa-Hot-Bath-Photo-by-Lisa-Marie-%40lostwithleesa.jpeg
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+- Tobias Fornier: Trip.com · Tobias Fornier travel photo
+    https://ak-d.tripcdn.com/images/1i63b2224s9mtq7ld1CE9.jpg?proc=source%2Ftrip
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+- Valderrama: Tanaw Explorer · Mount Igcoron, Valderrama
+    https://i0.wp.com/www.tanawexplorer.com/wp-content/uploads/2024/06/Mt-Igcoron-Valderrama-2.jpg?fit=1200%2C700&ssl=1
+    rights: THIRD-PARTY (blog/news/travel/social – reuse rights NOT confirmed; get permission)
+
+D. NOTE ON RIGHTS
+Images are hotlinked from their original hosts. Appearing on a public web page does not make an image free to reuse. Before launch, replace THIRD-PARTY images with permission-cleared or Wikimedia/official-LGU photos, and self-host them in an images/ folder.
+silverbackpacker.com explicitly forbids reuse of its photos without written consent; none of its images are used in this project.

@@ -1,0 +1,194 @@
+IMPORTANT — HISTORICAL PHOTO RESEARCH NOTES
+The source URLs and audit notes in this file document earlier photo research only. They are not active image sources in the current website. The current website uses one locally supplied image.jpg per attraction folder under tourist-spot-images. See IMAGE-GUIDE.txt.
+
+DISCOVER ANTIQUE — SHARED TOURISM CONTENT DATABASE
+
+This version uses one shared data file: js/destination-data.js. Both the municipality carousel and destination detail page read from this file. To add or edit an attraction, update its municipality record and matching details entry.
+
+MUNICIPALITY / ATTRACTION RESEARCH REFERENCES
+
+Province list (18 municipalities)
+- Philippine Statistics Authority: https://psa.gov.ph/classification/psgc/citimuni/0600600000
+- Department of Agriculture Antique profile: https://amia.da.gov.ph/wp-content/uploads/2024/02/PCVRA-Antique-Anini-y-FINAL-Nov-22-2023-E-copy.pdf
+
+Anini-y
+- Sira-an Hot Spring: https://www.lakadpilipinas.com/2014/06/antique-travel-guide-itinerary.html
+- San Juan de Nepomuceno Church: https://cmpg.upv.edu.ph/heritage-location/antique/anini-y/
+- Nogas Island: https://experiencewesternvisayas.com/antique/
+
+Barbaza
+- Nalupa River: https://cmpg.upv.edu.ph/heritage/nalupa-river/
+- Mt. Nangtud: https://www.pinoymountaineer.com/2015/11/mt-nangtud-2073-in-barbaza-antique.html
+
+Belison
+- Municipal cultural heritage inventory: https://belisonantique.gov.ph/cultural-heritage/
+- Pagunsan Ancestral House: https://cmpg.upv.edu.ph/heritage/pagunsan-ancestral-house/
+
+Bugasong
+- Bagtason Loom Weaving: https://cmpg.upv.edu.ph/heritage/paghabul-sa-bagtasonloom-weaving-in-bagtason/
+- Experience Western Visayas: https://experiencewesternvisayas.com/antique/
+
+Caluya
+- Municipal profile: https://elgu-caluya-antique-news.e.gov.ph/about
+
+Culasi
+- Official municipal website: https://culasiantique.gov.ph/
+- Mararison Island: https://culasiantique.gov.ph/malalison-island-2/
+
+Hamtic
+- Municipal historical profile: https://hamtic.gov.ph/historical/
+- General Leandro Fullon National Shrine: https://cmpg.upv.edu.ph/heritage/general-leandro-fullon-national-shrine/
+- Simbanan: https://cmpg.upv.edu.ph/heritage-location/antique/hamtic/
+
+Laua-an
+- Cultural mapping: https://cmpg.upv.edu.ph/heritage-location/antique/laua-an/
+- Jose Rizal Monument: https://cmpg.upv.edu.ph/heritage/jose-rizal-monument/
+
+Libertad
+- Bongan-bongan Spring: https://cmpg.upv.edu.ph/heritage/bongan-bongan-spring/
+- Pagrara it Banig: https://cmpg.upv.edu.ph/heritage/pagrara-it-banig-banig-making/
+
+Pandan
+- Bugang River: https://pandan-antique.gov.ph/bugang-river/
+- Malumpati Cold Spring: https://pandan-antique.gov.ph/malumpati-cold-spring/
+- Natural attractions: https://www.pandan.ph/tourism/natural/
+
+Patnongon
+- Casa Tribunal restoration: https://pia.gov.ph/news/nhcp-inaugurates-restored-casa-municipal-de-patnongon/
+- Old Church and Convent: https://philhistoricsites.nhcp.gov.ph/registry_database/ang-lumang-simbahan-at-kumbento-ng-patnongon/
+
+San Jose de Buenavista
+- Municipal tourism profile: https://sanjoseantique.gov.ph/wp-content/uploads/2025/12/TOURISM-PROFILE-UPDATED.pdf
+- Old Capitol / National Museum: https://www.nationalmuseum.gov.ph/
+- Esplanade: https://scene.ph/atlas/antique
+
+San Remigio
+- Municipal tourism page: https://sanremigioantique.gov.ph/tourism/
+- Municipal tourism home: https://sanremigioantique.gov.ph/
+
+Sebaste
+- Cultural Mapping: https://cmpg.upv.edu.ph/heritage-location/antique/sebaste/
+
+Sibalom
+- Municipal tourism page: https://sibalom.gov.ph/tourism/
+- Cultural Mapping: https://cmpg.upv.edu.ph/heritage-location/antique/sibalom/
+
+Tibiao
+- Experience Western Visayas: https://experiencewesternvisayas.com/antique/
+- Bugtong Bato Falls map listing and regional guide references are described in the tourism source list.
+
+Tobias Fornier
+- Canonical baptismal records: https://cmpg.upv.edu.ph/heritage/1869-1928-canonical-books-on-baptismal-records-of-tobias-fornier/
+- Pangatas sa Suba: https://cmpg.upv.edu.ph/heritage/pangatas-sa-suba/
+- Serequelas: https://cmpg.upv.edu.ph/heritage/sereguelas/
+
+Valderrama
+- Villa Valderrama: https://www.boracayislandnews.com/villa-valderrama-natures-pride-at-the-heart-of-antique/
+- Mount Igcoron: https://ilonggotraveler.com/2017/07/16/guide-to-mount-igcoron-valderrama-antique/
+- CPU destination study: https://repository.cpu.edu.ph/handle/20.500.12852/2528
+
+PHOTO AND MAP NOTES
+- The homepage uses sourced cover images for all 18 municipalities. Some covers are attraction photographs; others are general municipality landscapes where a suitable attraction image was not found.
+- Attraction detail pages show only photographs linked to the named attraction. Empty gallery spaces are no longer rendered as fake photo cards.
+- Maps are generated as Google Maps search/embed queries from each attraction name and location. Confirm the pin and access point locally before travel.
+- Descriptions are introductory summaries based on the linked references. Confirm access, ownership, opening status, facilities, and visitor permissions with the local tourism office.
+- Cultural practices, festivals, and archival collections are identified as heritage experiences, not guaranteed daily visitor activities.
+- Photographs are loaded from original third-party websites; an internet connection is required. Attribution is not the same as permission. Confirm reuse rights before public/commercial publication.
+
+ATTRACTION PHOTOGRAPH SOURCES AND CREDITS
+- Anini-y — Sira-an Hot Spring: Wengweng Wanders · original photo source. Image: https://wengwengwanders.wordpress.com/wp-content/uploads/2016/08/img_1176.jpg?crop=1&h=1500&w=2000 Source: https://wengwengwanders.wordpress.com/2016/08/08/when-in-antique-take-a-dip-at-sira-an-hot-springs/
+- Anini-y — San Juan de Nepomuceno Church: Elal Lasola · Anini-y church photo feature. Image: https://3.bp.blogspot.com/-oX6SWxSrLtw/UydDBQrJslI/AAAAAAAALAA/4PTiilwcJYA/s1600/San%2BJuan%2BNapumuceno%2BParish%2BChurch%2BAnini-y%2BAntique-1383.jpg Source: https://www.elaljanelasola.com/2014/04/antique-st-john-church-of-anini-y_11.html
+- Anini-y — Nogas Island: Wikimedia Commons · Nogas Island Marine Reserve and Sanctuary. Image: https://commons.wikimedia.org/wiki/Special:FilePath/Nogas_Island_Marine_Reserve_and_Sanctuary.jpg Source: https://commons.wikimedia.org/wiki/File:Nogas_Island_Marine_Reserve_and_Sanctuary.jpg
+- Barbaza — Nalupa River: University of Antique Cultural Mappers, 2024 · Cultural Mapping of Panay and Guimaras. Image: https://cmpg.upv.edu.ph/wp-content/uploads/2026/02/heritage-7424-1Z_59f1YpMlug9d53wLQG9ta95Z8WKxsi-800x1024.jpg Source: https://cmpg.upv.edu.ph/heritage/nalupa-river/
+- Caluya — Caluya Island: The Blue Ink · Exploring Caluya Island. Image: https://theblueink.com/wp-content/uploads/images/caluya-island-antique-02.jpg Source: https://www.theblueink.com/exploring-caluya-island/
+- Caluya — Semirara Island: Wikimedia Commons · CC BY-SA 3.0. Image: https://commons.wikimedia.org/wiki/Special:FilePath/Panian_mine_full.jpg Source: https://commons.wikimedia.org/wiki/File:Panian_mine_full.jpg
+- Culasi — Mararison Island: Paradise Chronicle · CC BY-SA 4.0. Image: https://commons.wikimedia.org/wiki/Special:FilePath/Bay_of_Mararison_island.jpg Source: https://commons.wikimedia.org/wiki/File:Bay_of_Mararison_island.jpg
+- Culasi — Mararison Island: Paradise Chronicle · CC BY-SA 4.0. Image: https://commons.wikimedia.org/wiki/Special:FilePath/Fisherman_on_Mararison_island.jpg Source: https://commons.wikimedia.org/wiki/File:Fisherman_on_Mararison_island.jpg
+- Culasi — Mararison Island: Gwyn osorio · CC BY-SA 4.0. Image: https://commons.wikimedia.org/wiki/Special:FilePath/Mararison_Island_Culasi_Antique_02.jpg Source: https://commons.wikimedia.org/wiki/File:Mararison_Island_Culasi_Antique_02.jpg
+- Culasi — Mount Madja-as: Mountains PH · Mount Madja-as guide. Image: https://cdn.mountains.com.ph/photos/1ee86552-3583-45f2-821d-697f5a46ed4b/conversions/2ed84e778d90d32ff88d83a4bd949fcd-landscape.jpg Source: https://mountains.com.ph/philippines/visayas/region-vi-western-visayas/antique/culasi/mount-madjaas
+- Culasi — Bantang River: Municipality of Culasi · official tourism website. Image: https://culasiantique.gov.ph/wp-content/uploads/2022/02/Bantang-River.png Source: https://culasiantique.gov.ph/municipal-tourism-office/
+- Culasi — Batbatan Island: Mindtrip · Batbatan Island listing. Image: https://d3fphkxyf5o5bm.cloudfront.net/image-resize/format%3Dwebp%2Cw%3D1200/QwRY54Li1HMwD7oNfpeVSOPPHV3roYsyfvWCs8AMxG Source: https://mindtrip.ai/attraction/culasi-visayas/batbatan-island/at-Np0049vL
+- Hamtic — General Leandro Fullon National Shrine: Municipality of Hamtic · official website. Image: https://hamtic.gov.ph/wp-content/uploads/2025/03/IMG_8744-1024x683.jpg Source: https://hamtic.gov.ph/news/151st-birth-anniversary-of-general-leandro-locsin-fullon/
+- Libertad — Bongan-bongan Spring: Adrenaline Romance / Flickr · Libertad feature. Image: https://farm5.staticflickr.com/4563/38362375456_42384705fc_c.jpg Source: https://adrenalineromance.com/2016/10/06/experience-antique-the-stunning-natural-and-cultural-wonders-of-libertad/
+- Libertad — Bongan-bongan Spring: The Lone Rider · Bungan-Bungan Spring feature. Image: https://www.thelonerider.com/2016/dec/bunganbungan_spring/images/03bungan_spring.jpg Source: https://www.thelonerider.com/2016/dec/bunganbungan_spring/bunganbungan_spring.shtml
+- Pandan — Malumpati Cold Spring: Gibough · CC BY-SA 4.0. Image: https://commons.wikimedia.org/wiki/Special:FilePath/Malumpati_Cold_Spring.jpg Source: https://commons.wikimedia.org/wiki/File:Malumpati_Cold_Spring.jpg
+- Pandan — Malumpati Cold Spring: Incredible Traveler · Malumpati Cold Spring feature. Image: https://static.wixstatic.com/media/61ffef_05f914815c9c4bf1a457d8a0af4155fc~mv2.jpg/v1/fill/w_980%2Ch_653%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/61ffef_05f914815c9c4bf1a457d8a0af4155fc~mv2.jpg Source: https://www.incredibletraveler.com/post/malumpati-cold-spring-a-refreshing-health-spring-3
+- Pandan — Bugang River: Adrenaline Romance / Flickr · Antique river feature. Image: https://farm5.staticflickr.com/4523/38362439196_88efcea1a3_c.jpg Source: https://adrenalineromance.com/
+- Pandan — Duyong Beach: Tripadvisor · Duyong Beach photo listing. Image: https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/50/83/9d/white-beach.jpg?h=1200&s=1&w=1200 Source: https://www.tripadvisor.es/Attraction_Review-g1838072-d7349186-Reviews-Duyong_Beach-Pandan_Antique_Province_Panay_Island_Visayas.html
+- Pandan — Mount Mab-o: Municipality of Pandan · official Mab-O Mountain page. Image: https://pandan-antique.gov.ph/wp-content/uploads/photo-gallery/imported_from_media_libray/mab-o.jpg?bwg=1595316298 Source: https://pandan-antique.gov.ph/mab-o/
+- Patnongon — Old Church and Convent of Patnongon: The Happy Trip · Antique travel guide. Image: https://thehappytrip.com/wp-content/uploads/2017/12/20615864_10154824255058017_2450103006525494829_o.jpg Source: https://thehappytrip.com/2018/01/2018-antique-travel-guide-tourist-attractions-budget-resorts/
+- San Jose de Buenavista — Balay na Bato (Casa Gella-Azurin): Philstar · heritage house feature. Image: https://media.philstar.com/photos/2020/07/10/house-1_2020-07-10_16-11-59.jpg Source: https://www.philstar.com/lifestyle/modern-living/2020/07/11/2027044/stone-house-antique-puts-us-touch-glorious-past
+- San Remigio — Antique Rice Terraces: Nomadic Experiences · Antique travel feature. Image: https://1.bp.blogspot.com/-RCy7dV-cB80/YFrjprgU54I/AAAAAAAA_xQ/qREIosZ5PGM9tbjIP4PeKmRiXqjPdQwkACLcBGAsYHQ/w640-h426/Antique%2BRice%2BTerraces%2B2.JPG Source: https://www.nomadicexperiences.com/2020/05/why-this-province-is-underrated-tourist.html
+- San Remigio — Danao Lake: Municipality of San Remigio · official tourism website. Image: https://sanremigioantique.gov.ph/wp-content/uploads/2026/02/6.png Source: https://sanremigioantique.gov.ph/
+- San Remigio — Highland Strawberry Garden: Municipality of San Remigio · official tourism website. Image: https://sanremigioantique.gov.ph/wp-content/uploads/2026/03/Strawberry-Garden-1.jpg Source: https://sanremigioantique.gov.ph/
+- San Remigio — Highland Strawberry Garden: Tripadvisor · Aningalan Strawberry Farm photo listing. Image: https://media-cdn.tripadvisor.com/media/photo-s/12/03/36/cc/photo4jpg.jpg Source: https://www.tripadvisor.ca/Attraction_Review-g7276636-d12543134-Reviews-Aningalan_Strawberry_Farm-San_Remigio_Antique_Province_Panay_Island_Visayas.html
+- Sebaste — Igpasungaw Falls: Adrenaline Romance / Flickr · Igpasungaw Falls feature. Image: https://farm5.staticflickr.com/4610/25485817347_d6d0397eb1_c.jpg Source: https://adrenalineromance.com/2016/10/20/experience-antique-igpasungaw-falls-in-sebaste-a-grand-staircase-into-the-wild/
+- Sibalom — Indaga Cold Spring: Municipality of Sibalom · official tourism website. Image: https://sibalom.gov.ph/wp-content/uploads/2023/02/indaga.jpg Source: https://sibalom.gov.ph/tourism/
+- Sibalom — Sibalom Natural Park: SunStar / Headtopics · Sibalom Natural Park feature. Image: https://i.headtopics.com/images/2024/5/8/sunstaronline/antique-to-introduce-sibalom-natural-park-as-ecoto-antique-to-introduce-sibalom-natural-park-as-ecoto-A6D2ABC0F346CD134798CB76AE524D26.webp Source: https://ph.headtopics.com/news/antique-to-introduce-sibalom-natural-park-as-ecotourism-52179404
+- Sibalom — Mau-it River: Daily Guardian · Rainbow River feature. Image: https://dailyguardian.com.ph/wp-content/uploads/2023/03/Rainbow-River-w.jpg Source: https://dailyguardian.com.ph/antiques-rainbow-river-also-has-worlds-largest-flowers/
+- Tibiao — Kawa Hot Bath: Lisa-Marie / Getaway.ph · Kawa Hot Bath feature. Image: https://getaway.ph/storage/2021/10/Kawa-Hot-Bath-Photo-by-Lisa-Marie-%40lostwithleesa.jpeg Source: https://getaway.ph/blog/arts-and-culture/a-kawa-bunga-moment-in-antique-with-a-hot-bath-in-an-on-oversized-cauldron/
+- Tibiao — Bugtong Bato Falls: Langyaw · Bugtong Bato Falls feature. Image: https://i0.wp.com/langyaw.com/wp-content/uploads/2015/06/bugtong-bato-falls-antique-8.jpg?resize=930%2C620&ssl=1 Source: https://langyaw.com/2015/06/18/challenging-multi-level-bugtong-bato-falls/
+- Tibiao — Bugtong Bato Falls: THE.YANG.ONE · Bugtong-Bato Falls feature. Image: https://i0.wp.com/theyang.one/wp-content/uploads/bugtong-thumb.jpg?fit=1200%2C800&ssl=1 Source: https://theyang.one/bugtong-bato-falls/
+- Valderrama — Villa Valderrama Mountain Resort: Daily Guardian · Villa Valderrama feature. Image: https://dailyguardian.com.ph/wp-content/uploads/2024/02/Villa-Valderrama3.jpg Source: https://dailyguardian.com.ph/villa-valderrama-natures-pride-at-the-heart-of-antique/
+- Valderrama — Mount Igcoron: Tanaw Explorer · Mount Igcoron feature. Image: https://i0.wp.com/www.tanawexplorer.com/wp-content/uploads/2024/06/Mt-Igcoron-Valderrama-2.jpg?fit=1200%2C700&ssl=1 Source: https://www.tanawexplorer.com/valderrama-trilogy-mt-igcoron/
+
+MUNICIPALITY COVER PHOTOS NOT ALREADY LISTED ABOVE
+- Belison: Wikimedia Commons · Belison mountains and rice field. Image: https://upload.wikimedia.org/wikipedia/commons/4/40/Belison_mountains_and_rice_field_%28Iloilo-Antique_Road%2C_Belison%2C_Antique%3B_01-24-2023%29.jpg Source: https://commons.wikimedia.org/wiki/File:Belison_mountains_and_rice_field_(Iloilo-Antique_Road,_Belison,_Antique;_01-24-2023).jpg
+- Bugasong: Mindtrip · Mount Igmatongtong photo. Image: https://d3fphkxyf5o5bm.cloudfront.net/image-resize/format%3Dwebp%2Cw%3D1200/QwRY54Li1HMwD7oNfosGesoBeljqzAV127GI4qMHzV Source: https://mindtrip.ai/attraction/bugasong-visayas/mt-igmatongtong/at-IGlBkYNH
+- Laua-an: Manila Bulletin · Laua-an mountain road feature. Image: https://mb.com.ph/manilabulletin/uploads/images/2025/10/23/52688.webp Source: https://mb.com.ph/2025/10/23/group-decries-p127-b-mountain-road-projects-built-on-antique-s-indigenous-lands
+- Tobias Fornier: Trip.com · Tobias Fornier travel photo. Image: https://ak-d.tripcdn.com/images/1i63b2224s9mtq7ld1CE9.jpg?proc=source%2Ftrip Source: https://www.trip.com/moments/detail/antique-1448046-14690285/
+
+
+HOMEPAGE HERO PHOTO UPDATE
+The homepage hero uses a photograph of Mararison Island and Mount Madja-as in Culasi, Antique, sourced from Kuno Earth: https://kuno.earth/articles/on-folktales-and-conservation-mararison-island . The image is loaded from the publisher-hosted image URL; reuse and hotlink availability are subject to the publisher/source terms.
+
+
+Valderrama municipality cover image: Tanaw Explorer, Mount Igcoron ridge panorama. Source: https://www.tanawexplorer.com/valderrama-trilogy-mt-igcoron/ . The website links to the original hosted image; availability and reuse terms remain subject to the publisher. Municipality-card cover images include a scenic fallback if an external image host fails.
+
+
+ADDED ATTRACTION BACKGROUND PHOTOS
+Hamtic – Simbanan Rock Formation: photo by Samuel Cezar Jr. Rubido (2024), Cultural Mapping of Panay and Guimaras, UP Visayas. https://cmpg.upv.edu.ph/heritage/simbanan/
+Patnongon – Casa Tribunal de Patnongon: NHCP photo via Wikimedia Commons, Facade of Casa Tribunal de Patnongon - NHCP - 1.jpg. https://commons.wikimedia.org/wiki/Category:Facades_in_the_Philippines
+Note: Attraction hero backgrounds use the first available attraction-specific gallery photo; otherwise the municipality cover photo remains the fallback.
+
+BACKGROUND COVERAGE NOTE (14 NOVEMBER 2026)
+Historical note from an earlier version: the website once used remote municipality cover images and attraction gallery images. These are no longer loaded by the current local-photo system.
+
+
+ATTRACTION PHOTO POLICY (UPDATED)
+The attraction detail hero now displays only a photo listed in that attraction's own details.gallery array. It does not fall back to a municipality cover photo or a generic stock image. If no verified attraction photo is available, the hero uses the designed background gradient instead of showing an unrelated photograph.
+
+Additional attraction-specific photo sources added in this update:
+- Libertad — Bariw Mat Weaving: Cultural Mapping of Panay and Guimaras, UP Visayas; photo credit Dangielyn B. Unilongo (2024): https://cmpg.upv.edu.ph/heritage/pagrara-it-banig-banig-making/
+- Laua-an — Traditional Boat-Making in Lindero: Cultural Mapping of Panay and Guimaras, UP Visayas; photo credit Albert Gerona (2021): https://cmpg.upv.edu.ph/heritage/pag-obra-kang-baruto/
+- Laua-an — Bukid Linintian: Cultural Mapping of Panay and Guimaras, UP Visayas; photo credit Jefferson D. Sillario (2024): https://cmpg.upv.edu.ph/heritage/bukid-linintian/
+
+PHOTO MATCH AUDIT
+Attraction-specific photo entries currently present: 35 of 58.
+Attractions still needing an individually verified photo: 23. These are intentionally not filled with municipality covers or unrelated scenery.
+
+
+ATTRACTION PHOTO POLICY (UPDATED)
+The attraction detail hero now displays only a photo listed in that attraction's own details.gallery array. It does not fall back to a municipality cover photo or a generic stock image. If no verified attraction photo is available, the hero uses the designed background gradient instead of showing an unrelated photograph.
+
+Additional attraction-specific photo sources added in this update:
+- Libertad — Bariw Mat Weaving: Cultural Mapping of Panay and Guimaras, UP Visayas; photo credit Dangielyn B. Unilongo (2024): https://cmpg.upv.edu.ph/heritage/pagrara-it-banig-banig-making/
+- Laua-an — Traditional Boat-Making in Lindero: Cultural Mapping of Panay and Guimaras, UP Visayas; photo credit Albert Gerona (2021): https://cmpg.upv.edu.ph/heritage/pag-obra-kang-baruto/
+- Laua-an — Bukid Linintian: Cultural Mapping of Panay and Guimaras, UP Visayas; photo credit Jefferson D. Sillario (2024): https://cmpg.upv.edu.ph/heritage/bukid-linintian/
+- Bugasong — Bagtason Loom Weaving: Cultural Mapping of Panay and Guimaras, UP Visayas; photo credit Clavil Tadi Fortaleza (2021): https://cmpg.upv.edu.ph/heritage/paghabul-sa-bagtasonloom-weaving-in-bagtason/
+- Tobias Fornier — Pangatas sa Suba: Cultural Mapping of Panay and Guimaras, UP Visayas; photo credit Vince Villodres (2024): https://cmpg.upv.edu.ph/heritage/pangatas-sa-suba/
+
+PHOTO MATCH AUDIT
+Attraction-specific photo entries currently present before access removals: 37 of 56.
+Attractions still needing an individually verified photo at that audit: 21. These are intentionally not filled with municipality covers or unrelated scenery.
+
+ACCESS STATUS / REMOVALS
+- Igbaclag Cave (San Remigio): removed from visitor list; reported closed for ecosystem recovery. Philippine News Agency: https://www.pna.gov.ph/articles/1272466
+- Panalsalan Cave (San Remigio): removed pending confirmed public access; reported unexplored and not yet classified by DENR for tourism opening. Philippine News Agency: https://www.pna.gov.ph/articles/1249061
+
+
+LATEST PHOTO AUDIT AFTER ACCESS REMOVALS
+- 18 municipalities remain.
+- 56 attractions remain after removing Igbaclag Cave and Panalsalan Cave.
+- 36 attractions have at least one attraction-specific gallery image.
+- 20 attractions still need an individually verified photo.

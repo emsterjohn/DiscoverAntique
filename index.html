@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Antique — explore the natural beauty, culture, and destinations of Antique, Philippines.">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#123B50">
+  <title>Discover Antique | Experience the Beauty of Antique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Discover Antique home">
+      <span class="brand-mark">DA</span>
+      <span class="brand-name">DISCOVER <strong>ANTIQUE</strong></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mainNav">☰</button>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a href="#top">Home</a><a href="#about">About</a><a href="#municipalities">Municipalities</a><a href="#featured">Featured</a>
+    </nav>
+    <a class="header-cta btn btn-outline-light" href="#municipalities">Explore Antique <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-image" aria-hidden="true"></div><div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow light">WESTERN VISAYAS · PHILIPPINES</p>
+        <h1>Discover the<br><em>Beauty of Antique.</em></h1>
+        <p class="hero-copy">From peaceful coastlines to green mountain trails, find the places and stories that make Antique unforgettable.</p>
+        <a class="button button-light btn btn-light" href="#municipalities">Explore destinations <span>↓</span></a>
+      </div>
+      <div class="hero-bottom"><span>18 MUNICIPALITIES</span><span class="hero-line"></span><span>ONE BEAUTIFUL PROVINCE</span></div>
+    </section>
+
+    <section class="intro section-wrap" id="about">
+      <div><p class="eyebrow">A PLACE TO EXPERIENCE</p><h2>Nature, culture, <em>and adventure.</em></h2></div>
+      <p class="intro-copy">Discover Antique is your starting point for exploring the province's landscapes, local culture, and memorable destinations. Choose a municipality and discover what makes each place special.</p>
+    </section>
+
+    <section class="municipality-section" id="municipalities">
+      <div class="section-heading section-wrap">
+        <div>
+          <p class="eyebrow">FIND YOUR NEXT DESTINATION</p>
+          <h2>Explore the <em>municipalities.</em></h2>
+          <p class="section-subtitle">Move through the cards, choose a municipality, and start exploring.</p>
+          <div class="destination-search">
+            <label for="destinationSearch">SEARCH ANTIQUE</label>
+            <input id="destinationSearch" type="search" placeholder="Find a municipality or attraction..." autocomplete="off">
+            <div id="destinationSearchResults" class="destination-search-results" role="listbox" aria-label="Search results" hidden></div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-shell">
+        <div class="municipality-track" id="municipalityTrack" role="group" aria-label="Explore the 18 municipalities of Antique" tabindex="0"></div>
+      </div>
+      <div class="carousel-guidance">
+        <p class="carousel-hint">← DRAG OR SWIPE TO EXPLORE →</p>
+      </div>
+    </section>
+
+    <section class="destination-section section-wrap" id="destinationDetails" aria-label="Selected destination">
+      <div class="destination-photo" id="destinationPhoto" aria-hidden="true"></div><div class="destination-overlay" aria-hidden="true"></div>
+      <div class="destination-content">
+        <p class="eyebrow light" id="destinationEyebrow">YOUR NEXT DESTINATION</p>
+        <h2 id="destinationName">Choose a municipality</h2>
+        <p class="destination-description" id="destinationDescription" aria-live="polite">Select one of the municipality cards above to discover its featured attractions.</p>
+        <div class="attraction-list" id="attractionList" aria-label="Featured attractions"></div>
+        <p class="photo-note" id="municipalityPhotoCredit">Municipality backgrounds and cards automatically reuse the photos inside that municipality’s tourist-spot folders.</p>
+      </div>
+    </section>
+
+    <section class="featured-section section-wrap" id="featured">
+      <div class="featured-heading">
+        <p class="eyebrow">A GLIMPSE OF THE PROVINCE</p><h2>Stories written by <em>nature.</em></h2>
+        <p class="section-subtitle">Coastlines, springs, waterfalls, mountains, and local traditions await in Antique.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card feature-card-large">
+          <div class="feature-photo-slideshow" data-province-slot="coast" role="img" aria-label="Coastal landscapes in Antique"></div>
+          <div class="feature-caption"><span>COASTAL ESCAPES</span><h3>Find your place by the sea.</h3><span class="feature-credit">Photos automatically use the tourist-spot image folders</span></div>
+        </article>
+        <article class="feature-card">
+          <div class="feature-photo-slideshow" data-province-slot="water" role="img" aria-label="Rivers and springs in Antique"></div>
+          <div class="feature-caption"><span>NATURE &amp; WATER</span><h3>Follow the flow.</h3><span class="feature-credit">Photos automatically use the tourist-spot image folders</span></div>
+        </article>
+        <article class="feature-card">
+          <div class="feature-photo-slideshow" data-province-slot="highlands" role="img" aria-label="Highland landscapes in Antique"></div>
+          <div class="feature-caption"><span>HIGHLANDS</span><h3>Take the scenic route.</h3><span class="feature-credit">Photos automatically use the tourist-spot image folders</span></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <a class="brand brand-footer" href="#top"><span class="brand-mark">DA</span><span class="brand-name">DISCOVER <strong>ANTIQUE</strong></span></a>
+      <p>Experience nature, culture, and adventure in the heart of Western Visayas.</p>
+      <a class="back-top" href="#top">Back to top ↑</a>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Discover Antique · Tourism information website</span><span>Made to celebrate Antique, Philippines</span></div>
+  </footer>
+  <script src="js/destination-data.js"></script><script src="js/backdrop.js"></script><script src="js/script.js"></script>
+</body>
+</html>

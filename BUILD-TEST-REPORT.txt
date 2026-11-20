@@ -1,0 +1,28 @@
+BUILD AND STATIC TEST REPORT
+============================
+
+IMPLEMENTED IMAGE SYSTEM
+------------------------
+- The only photo directory is tourist-spot-images/.
+- Each attraction folder expects one local photo named image.jpg.
+- No JSON manifest or manual image-path registration is required.
+- Municipality carousel cards and selected municipality backgrounds use the same pool of photos belonging to that municipality.
+- Each attraction detail page uses the image.jpg from that exact attraction folder.
+- All three province feature slides reuse the combined pool of attraction photos from all municipalities.
+- Photo rotation is set to 3 seconds with smooth crossfades and no immediate repeated selection when multiple images are available.
+- Missing photos are skipped by the rotating slideshows; municipality-specific sections never borrow images from another municipality.
+
+STATIC CHECKS PERFORMED
+-----------------------
+- Node.js syntax checks passed for all four JavaScript files.
+- Both CSS files parsed without top-level syntax errors.
+- Both HTML pages parsed and their local script references were verified.
+- All 18 municipality folders and all 56 attraction folders were verified against destination-data.js.
+- Verified that the only top-level project directories are css/, js/, and tourist-spot-images/.
+- Verified that the active website scripts and HTML no longer depend on image-manifest.json or the removed image folders.
+
+NOT PERFORMED
+-------------
+- No real browser visual inspection or Android device testing is claimed.
+- Actual photo loading/cropping and slideshow appearance must be checked after image.jpg files are added.
+- Live Google Maps and external source links were not end-to-end tested.
