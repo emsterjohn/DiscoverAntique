@@ -332,18 +332,22 @@ document.addEventListener("DOMContentLoaded", () => {
     if (event.key === "ArrowLeft") { event.preventDefault(); moveCarousel(-1); }
   });
 
-  // Desktop mouse dragging only. Android and other touch devices use the
-  // browser's native horizontal scrolling, momentum, and CSS scroll snapping.
+  // Controlled swipe: follow the finger, then advance at most one card.
+  // This prevents fast Android flicks from skipping several municipalities.
   let pointerId = null;
+  let dragStartIndex = selectedIndex;
+  let activePointerType = "";
 
   track.addEventListener("pointerdown", (event) => {
-    if (event.pointerType !== "mouse" || event.button !== 0) return;
+    if (event.pointerType === "mouse" && event.button !== 0) return;
     if (event.target.closest(".municipality-play")) return;
     pointerId = event.pointerId;
+    activePointerType = event.pointerType;
     isDragging = true;
     didDrag = false;
     dragStartX = event.clientX;
     dragStartScroll = track.scrollLeft;
+    dragStartIndex = selectedIndex;
     track.classList.add("is-dragging");
     track.style.scrollBehavior = "auto";
     try { track.setPointerCapture(pointerId); } catch (_) {}
@@ -352,14 +356,22 @@ document.addEventListener("DOMContentLoaded", () => {
   track.addEventListener("pointermove", (event) => {
     if (!isDragging || event.pointerId !== pointerId) return;
     const distance = event.clientX - dragStartX;
-    if (Math.abs(distance) > 5) didDrag = true;
-    track.scrollLeft = dragStartScroll - distance;
+    if (Math.abs(distance) > 6) didDrag = true;
+    if (didDrag) {
+      if (event.cancelable) event.preventDefault();
+      track.scrollLeft = dragStartScroll - distance;
+    }
   });
 
   function stopDragging(event) {
     if (!isDragging || (event && event.pointerId !== pointerId)) return;
     const releasedPointer = pointerId;
+    const swipeDistance = event && typeof event.clientX === "number"
+      ? event.clientX - dragStartX
+      : 0;
+    const wasTouch = activePointerType === "touch" || activePointerType === "pen";
     pointerId = null;
+    activePointerType = "";
     isDragging = false;
     track.classList.remove("is-dragging");
     track.style.scrollBehavior = "";
@@ -367,6 +379,16 @@ document.addEventListener("DOMContentLoaded", () => {
       try {
         if (track.hasPointerCapture(releasedPointer)) track.releasePointerCapture(releasedPointer);
       } catch (_) {}
+    }
+
+    if (wasTouch) {
+      const threshold = Math.max(34, track.clientWidth * 0.12);
+      let targetIndex = dragStartIndex;
+      if (didDrag && Math.abs(swipeDistance) >= threshold) {
+        targetIndex += swipeDistance < 0 ? 1 : -1;
+      }
+      targetIndex = Math.max(0, Math.min(municipalities.length - 1, targetIndex));
+      centerMunicipality(targetIndex, "smooth");
     }
 
     if (didDrag) {
