@@ -671,3 +671,15 @@ body { background: var(--cream); color: var(--ink); }
 @media (prefers-reduced-motion: reduce) {
   .municipality-track { scroll-snap-type: x proximity; }
 }
+
+
+/* Controlled horizontal swipes: keep vertical page scrolling native on touch devices. */
+.municipality-track {
+  touch-action: pan-y;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+}
+.municipality-track.is-dragging {
+  scroll-snap-type: none !important;
+  cursor: grabbing;
+}
